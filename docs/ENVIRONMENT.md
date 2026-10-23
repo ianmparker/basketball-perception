@@ -43,6 +43,8 @@ failure, but it should be fixed for training or inference.
 ## Notes
 
 - `open_clip_torch` is optional; install it only for the CLIP team-ID path.
+- `easyocr`, `wandb`, `roboflow`, and `matplotlib` are optional extras:
+  `pip install -r requirements-optional.txt`.
 - The court keypoint weights are expected at
   `runs/pose/court_kp_v18_resume/weights/best.pt`. `runs/` is gitignored; a fresh clone
   needs the artifact supplied separately.

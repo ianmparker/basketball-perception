@@ -1,0 +1,9 @@
+# Optional extras. Install only the ones you need.
+#
+#   pip install -r requirements-optional.txt
+
+easyocr>=1.7          # scorebug OCR and shot/clock alignment
+wandb>=0.16           # training experiment tracking
+roboflow>=1.0         # dataset download helpers
+matplotlib>=3.7       # court diagrams and homography visualizations
+coremltools>=7.0; platform_system == "Darwin"
