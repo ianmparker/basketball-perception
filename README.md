@@ -176,6 +176,14 @@ python research/query.py track perception.calibration
 - **No commercial-clean model.** Training data includes research-only footage; the
   shipped weights are not cleared for redistribution.
 
+## Lineage
+
+This project began in 2024 as a shoot-around shot counter
+([basket-event-detection](https://github.com/ianmparker/basket-event-detection)): a
+YOLO ball/hoop detector that counted made baskets. That repository is archived. The
+current pipeline supersedes it with multi-object tracking, court calibration, a
+versioned result schema, and committed evaluation scorecards.
+
 ## Data policy
 
 This repository contains **no broadcast video, extracted frames, or trained task
