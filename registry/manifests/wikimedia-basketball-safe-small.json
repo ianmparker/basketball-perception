@@ -1,0 +1,53 @@
+{
+  "source_asset_id": "wikimedia-basketball-safe",
+  "category": "Category:Videos_of_basketball",
+  "generated_at": "2026-10-20T00:20:04+00:00",
+  "allow_share_alike": false,
+  "files": [
+    {
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s004.ogv",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s004.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s004.ogv",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Erčulj F, Štrumbelj E",
+      "description": "A demonstration of a tip-in (two-legged).",
+      "size_mb": 1.4,
+      "mime": "application/ogg"
+    },
+    {
+      "filename": "Ambassador_Nicholas_Burns_plays_basketball_with_Chinese_students_in_Zhijiang_Dong_Autonomous_County.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ambassador_Nicholas_Burns_plays_basketball_with_Chinese_students_in_Zhijiang_Dong_Autonomous_County.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ambassador_Nicholas_Burns_plays_basketball_with_Chinese_students_in_Zhijiang_Dong_Autonomous_County.webm",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Ambassador of the United States of America to the People's Republic of China",
+      "description": "Ambassador Nicholas Burns plays basketball with Chinese students in Zhijiang Dong Autonomous County (芷江侗族自治县).",
+      "size_mb": 1.5,
+      "mime": "video/webm"
+    },
+    {
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s005.ogv",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s005.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s005.ogv",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Erčulj F, Štrumbelj E",
+      "description": "A demonstration of a dunk (two-legged).",
+      "size_mb": 1.95,
+      "mime": "application/ogg"
+    },
+    {
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s007.ogv",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s007.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s007.ogv",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Erčulj F, Štrumbelj E",
+      "description": "A demonstration of a hook shot (one-legged).",
+      "size_mb": 2.07,
+      "mime": "application/ogg"
+    }
+  ],
+  "note": "Subset ingested after Wikimedia rate limiting; remaining files can be fetched later."
+}

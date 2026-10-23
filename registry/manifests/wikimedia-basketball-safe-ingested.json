@@ -1,0 +1,218 @@
+{
+  "asset_id": "wikimedia-basketball-safe",
+  "name": "Wikimedia Commons \u2014 safe-license basketball videos",
+  "source_url": "https://commons.wikimedia.org/wiki/Category:Videos_of_basketball",
+  "license_id": "Per-file: Public domain, CC0, or CC BY",
+  "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+  "risk_tier": "SAFE",
+  "commercial_use_allowed": true,
+  "attribution_text": "Per-file; the generated manifest captures artist, page URL, and license.",
+  "retrieved_at": "2026-10-20T12:31:18+00:00",
+  "dry_run": false,
+  "files": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Domen_Lorbek_to_Brezec_-_Slovenia_vs_Poland.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Domen_Lorbek_to_Brezec_-_Slovenia_vs_Poland.webm",
+      "sha256": "c0805f7ccae29be85c439b61dd4d3882012b52099f3835498b1fdadc4ded1510",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "artist": "https://www.youtube.com/user/AnAvailibleUsername",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Domen_Lorbek_to_Brezec_-_Slovenia_vs_Poland.webm",
+      "description": "Eurobasket 2009, Group F, Slovenia vs Poland.\n\nSlovenia presents the classical european basketball.",
+      "bytes": 764742,
+      "status": "ok"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s004.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s004.ogv",
+      "sha256": "093d5308f903c8f9313cb17f1e446474f58cbc20fe6f52837cc385b0da13e9c3",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s004.ogv",
+      "description": "A demonstration of a tip-in (two-legged).",
+      "bytes": 1464547,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ambassador_Nicholas_Burns_plays_basketball_with_Chinese_students_in_Zhijiang_Dong_Autonomous_County.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Ambassador_Nicholas_Burns_plays_basketball_with_Chinese_students_in_Zhijiang_Dong_Autonomous_County.webm",
+      "sha256": "e2ffca2d0dac0f8d974fe005292b5e31ffebc0949288e3b7231039fccaeebe92",
+      "license": "Public domain",
+      "artist": "Ambassador of the United States of America to the People's Republic of China",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ambassador_Nicholas_Burns_plays_basketball_with_Chinese_students_in_Zhijiang_Dong_Autonomous_County.webm",
+      "description": "Ambassador Nicholas Burns plays basketball with Chinese students in Zhijiang Dong Autonomous County (\u82b7\u6c5f\u4f97\u65cf\u81ea\u6cbb\u53bf).",
+      "bytes": 1577445,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s005.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s005.ogv",
+      "sha256": "03c7b884393ebef68d06f51c19678cb9428f38131c55d596eeeda101e5e4fd97",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s005.ogv",
+      "description": "A demonstration of a dunk (two-legged).",
+      "bytes": 2045401,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s007.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s007.ogv",
+      "sha256": "b7fb985d0fb0e263dd56e4874c3ee0265265613b1c7970a85dbdb67376e28486",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s007.ogv",
+      "description": "A demonstration of a hook shot (one-legged).",
+      "bytes": 2174875,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s001.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s001.ogv",
+      "sha256": "5f73f1a5185144f0f88a8182180dc3830d9b9aa6f04115b3a3d0735adcacbf32",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s001.ogv",
+      "description": "A demonstration of an above head shot (two-legged).",
+      "bytes": 2312988,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s003.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s003.ogv",
+      "sha256": "8547859308face296f29cb7daa4d4563ef42e0f5c62246ccbdad04c88c083f04",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s003.ogv",
+      "description": "A demonstration of a layup (one-legged).",
+      "bytes": 2473273,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s002.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s002.ogv",
+      "sha256": "30da212804330dd587b72a16aa453cb105edbbe440b99dd19d2b6897f9008609",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s002.ogv",
+      "description": "A demonstration of a hook shot (two-legged).",
+      "bytes": 2531506,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s008.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s008.ogv",
+      "sha256": "b4f30d01be745ba92a417cd17b450975e1653d3d18e4533425ff33f52609c18b",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s008.ogv",
+      "description": "A demonstration of a layup, after running past (imaginary) defender.",
+      "bytes": 2755440,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s006.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s006.ogv",
+      "sha256": "35559c3de4d135e2fa2cb9abd14b9685b5266d74789ee3cb65486bd2a2ad84ca",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s006.ogv",
+      "description": "A demonstration of a layup (two-legged).",
+      "bytes": 2818487,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s009.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s009.ogv",
+      "sha256": "3ea09806b6e05da15aabdfd53a04b3ea79050410da2eea6ad2da0829c32c2c03",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Er\u010dulj F, \u0160trumbelj E",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s009.ogv",
+      "description": "A demonstration of an above head shot, after dribbling past (imaginary) defender.",
+      "bytes": 2926305,
+      "status": "skipped"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/%E8%BF%91%E7%99%BE%E5%90%8D%E4%B8%A4%E5%B2%B8%E5%AD%A6%E5%AD%90%E5%9C%A8%E6%B2%88%E9%98%B3%E2%80%9C%E4%BB%A5%E7%90%83%E4%BC%9A%E5%8F%8B%E2%80%9D.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "commons_5701c1358b.webm",
+      "sha256": "35a4d36b54dd63a3e1211f1e1b44d9ebbb468e7b2546288da569e098e56322b8",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "\u4e2d\u56fd\u65b0\u95fb\u793e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E8%BF%91%E7%99%BE%E5%90%8D%E4%B8%A4%E5%B2%B8%E5%AD%A6%E5%AD%90%E5%9C%A8%E6%B2%88%E9%98%B3%E2%80%9C%E4%BB%A5%E7%90%83%E4%BC%9A%E5%8F%8B%E2%80%9D.webm",
+      "description": "\u200b\u201c\u6c88\u53f0\u9752\u5e74\u4ea4\u6d41\u5b63\u2014\u20142026\u6c88\u53f0\u9ad8\u4e2d\u7bee\u7403\u6587\u5316\u4ea4\u6d41\u6d3b\u52a8\u201d8\u670811\u65e5\u81f38\u670818\u65e5\u5728\u6c88\u9633\u4e3e\u529e\u3002\u53f0\u6e7e\u65b0\u5317\u5e02\u5357\u5c71\u9ad8\u7ea7\u4e2d\u5b66\u7bee\u7403\u961f\u4e00\u884c25\u4eba\u4e0e\u6c88\u9633\u5e02\u7b2c\u4e09\u5341\u4e00\u4e2d\u5b66\u7bee\u7403\u961f\u3001\u8fbd\u5b81\u7701\u4e2d\u5b66\u751f\u7bee\u7403\u8054\u961f\u7b49\u8fd1\u767e\u540d\u4e24\u5cb8\u9752\u5e74\u5b66\u5b50\u9f50\u805a\u6c88\u57ce\uff0c\u4ee5\u7bee\u7403\u4e3a\u7ebd\u5e26\uff0c\u5171\u8d74\u4e00\u573a\u8de8\u8d8a\u6d77\u5ce1\u7684\u9752\u6625\u4e4b\u7ea6\u3002\n\u6d3b\u52a8\u671f\u95f4\uff0c\u591a\u573a\u53cb\u8c0a\u7bee\u7403\u8d5b\u8f6e\u756a\u4e0a\u6f14\uff0c\u4e24\u5cb8\u7403\u5458\u540c\u53f0\u7ade\u6280\u3001\u4e92\u5b66\u6240\u957f\u3002\u8d5b\u573a\u4e0a\uff0c\u53cc\u65b9\u961f\u5458\u5168\u529b\u4ee5\u8d74\u3001\u653b\u9632\u6709\u5e8f\uff1b\u8d5b\u573a\u4e0b\uff0c\u5c11\u5e74\u4eec\u63e1\u624b\u81f4\u610f\u3001\u4e92\u8d60\u7eaa\u5ff5\u793c\u54c1\uff0c\u521d\u6b21\u76f8\u89c1\u4fbf\u5feb\u901f\u62c9\u8fd1\u5fc3\u7075\u8ddd\u79bb\u3002\u53cc\u65b9\u6559\u7ec3\u5458\u56f4\u7ed5\u9752\u5c11\u5e74\u4f53\u80fd\u8bad\u7ec3\u3001\u6218\u672f\u4f53\u7cfb\u642d\u5efa\u3001\u7bee\u7403\u540e\u5907\u4eba\u624d\u57f9\u517b\u5f00\u5c55\u4e13\u9898\u5ea7\u8c08\u3002\n\u9664\u4e13\u4e1a\u7bee\u7403\u4ea4\u6d41\u5916\uff0c\u4ea4\u6d41\u56e2\u8d70\u8fdb\u6c88\u9633\u5e02\u7b2c\u4e09\u5341\u4e00\u4e2d\u5b66\uff0c\u6c89\u6d78\u5f0f\u611f\u53d7\u5927\u9646\u4e2d\u5b66\u591a\u5143\u5316\u80b2\u4eba\u4f53\u7cfb\u4e0e\u4e30\u5bcc\u6821\u56ed\u6587\u5316\u751f\u6d3b\uff1b\u8d70\u8fdb\u8fbd\u5b81\u7701\u535a\u7269\u9986\u3001\u8fbd\u5b81\u7701\u79d1\u6280\u9986\u3001\u6c88\u9633\u6545\u5bab\u535a\u7269\u9662\u3001\u5f20\u5b66\u826f\u65e7\u5c45\u9648\u5217\u9986\uff0c\u5faa\u7740\u5386\u53f2\u8db3\u8ff9\u63a2\u5bfb\u4e24\u5cb8\u540c\u6839\u540c\u6e90\u7684\u6587\u5316\u8840\u8109\uff0c\u5728\u5b9e\u666f\u7814\u5b66\u4e2d\u4e0d\u65ad\u52a0\u6df1\u6c11\u65cf\u6587\u5316\u8ba4\u540c\u611f\u3002\n\n\u636e\u6089\uff0c\u6c88\u53f0\u9ad8\u4e2d\u7bee\u7403\u6587\u5316\u4ea4\u6d41\u6d3b\u52a8\u662f\u6c88\u9633\u5bf9\u53f0\u9752\u5c11\u5e74\u4f53\u80b2\u6587\u5316\u4ea4\u6d41\u7684\u54c1\u724c\u6d3b\u52a8\u4e4b\u4e00\uff0c\u6c88\u9633\u5e02\u53f0\u529e\u5c06\u4e00\u5982\u65e2\u5f80\u5168\u529b\u652f\u6301\u5b66\u6821\u5f00\u5c55\u4e24\u5cb8\u4ea4\u6d41\u6d3b\u52a8\uff0c\u6301\u7eed\u4e3a\u6c88\u53f0\u9752\u5e74\u5404\u9886\u57df\u878d\u5408\u53d1\u5c55\u8d4b\u80fd\u52a9\u529b\u3002",
+      "bytes": 14151266,
+      "status": "ok"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/%E4%B8%AD%E5%9B%BD%E7%94%B7%E7%AF%AE%E5%9C%A8%E4%BA%AC%E5%85%AC%E5%BC%80%E8%AE%AD%E7%BB%83_%E5%B0%86%E8%BF%8E%E5%AE%9E%E6%88%98%E6%A3%80%E9%AA%8C.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "commons_fbaabdf724.webm",
+      "sha256": "9273fb2918339e43e768e8c6fb9bfbf29b8ed3767087ccfce08884ebab854c83",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "\u4e2d\u56fd\u65b0\u95fb\u793e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%9B%BD%E7%94%B7%E7%AF%AE%E5%9C%A8%E4%BA%AC%E5%85%AC%E5%BC%80%E8%AE%AD%E7%BB%83_%E5%B0%86%E8%BF%8E%E5%AE%9E%E6%88%98%E6%A3%80%E9%AA%8C.webm",
+      "description": "\u200b\u4e3a\u5907\u62182027\u5e74\u7537\u7bee\u4e16\u754c\u676f\u4e9a\u6d32\u533a\u9884\u9009\u8d5b\u7b2c\u56db\u7a97\u53e3\u671f\u6bd4\u8d5b\uff0c\u4e2d\u56fd\u7537\u7bee\u6b63\u5728\u56fd\u5bb6\u4f53\u80b2\u603b\u5c40\u8bad\u7ec3\u5c40\u5f00\u5c55\u96c6\u8bad\u3002\u4e3b\u6559\u7ec3\u90ed\u58eb\u5f3a8\u67087\u65e5\u5728\u516c\u5f00\u8bad\u7ec3\u8bfe\u4e0a\u8bf4\uff0c\u8bad\u7ec3\u8d28\u91cf\u975e\u5e38\u9ad8\uff0c\u5c06\u5728\u540e\u7eed\u6bd4\u8d5b\u4e2d\u505a\u51fa\u6539\u53d8\u3002\n\u5728\u4eca\u5e747\u6708\u521d\u8fdb\u884c\u7684\u7b2c\u4e09\u7a97\u53e3\u671f\u6bd4\u8d5b\u4e2d\uff0c\u4e2d\u56fd\u7537\u7bee\u5148\u662f\u5728\u4e3b\u573a\u4e0d\u654c\u65e5\u672c\u961f\uff0c\u4e4b\u540e\u5728\u5ba2\u573a\u6218\u80dc\u4e2d\u56fd\u53f0\u5317\u961f\uff0c\u664b\u7ea7\u7b2c\u4e8c\u9636\u6bb5\u6bd4\u8d5b\u3002\u5728\u6700\u65b0\u4e00\u671f\u56fd\u9645\u7bee\u8054\u4e16\u754c\u6392\u540d\u4e2d\uff0c\u4e2d\u56fd\u7537\u7bee\u8dcc\u81f3\u7b2c30\u540d\u3002\n\u90ed\u58eb\u5f3a\u8bf4\uff0c\u540e\u7eed\u6bd4\u8d5b\u5bf9\u4e2d\u56fd\u7537\u7bee\u800c\u8a00\u5bb9\u9519\u7387\u6bd4\u8f83\u5c0f\u3002\u5168\u961f\u5728\u4e0a\u4e2a\u7a97\u53e3\u671f\u6bd4\u8d5b\u7ed3\u675f\u540e\u8fdb\u884c\u4e86\u603b\u7ed3\uff0c\u5c06\u5728\u4e4b\u540e\u7684\u6bd4\u8d5b\u4e2d\u6709\u6240\u6539\u53d8\u3002\n\u8c08\u53ca\u7403\u961f\u5982\u4f55\u9762\u5bf9\u5de8\u5927\u7684\u538b\u529b\uff0c\u90ed\u58eb\u5f3a\u8868\u793a\uff0c\u9996\u5148\u662f\u505a\u597d\u81ea\u5df1\uff0c\u628a\u6bcf\u5929\u8bad\u7ec3\u7684\u4e1c\u897f\u5728\u6bd4\u8d5b\u5f53\u4e2d\u7684\u653b\u9632\u4e24\u7aef\u53d1\u6325\u51fa\u6765\u3002\u7b2c\u4e8c\u662f\u961f\u5458\u4eec\u8981\u653e\u5f00\u624b\u811a\uff0c\u4e0d\u8981\u80cc\u8d1f\u538b\u529b\u6253\u6bd4\u8d5b\u3002\u7b2c\u4e09\u662f\u5728\u7814\u7a76\u5bf9\u624b\u3001\u5206\u6790\u5bf9\u624b\u7684\u540c\u65f6\uff0c\u5728\u573a\u4e0a\u628a\u81ea\u8eab\u7684\u7279\u70b9\u6253\u51fa\u6765\u3002\n\u4f5c\u4e3a\u961f\u4f0d\u7684\u4e2d\u751f\u4ee3\u529b\u91cf\uff0c\u540e\u536b\u8d3a\u5e0c\u5b81\u8868\u793a\uff0c\u4f1a\u5728\u5e73\u65f6\u8bad\u7ec3\u548c\u751f\u6d3b\u4e2d\u5c3d\u53ef\u80fd\u5e2e\u52a9\u5e74\u8f7b\u7403\u5458\u6210\u957f\u548c\u627f\u62c5\u8d23\u4efb\u3002\n\u76ee\u524d\uff0c\u65c5\u7f8e\u7403\u5458\u738b\u4fca\u6770\u5df2\u53c2\u52a0\u96c6\u8bad\uff0c\u6768\u701a\u68ee\u4e5f\u5373\u5c06\u5f52\u961f\u3002\u540e\u536b\u5ed6\u4e09\u5b81\u8bf4\uff0c\u961f\u5458\u4eec\u901a\u8fc7\u8bad\u7ec3\u914d\u5408\u66f4\u52a0\u9ed8\u5951\uff0c\u5728\u573a\u4e0a\u548c\u573a\u4e0b\u5efa\u7acb\u4e86\u66f4\u597d\u7684\u5316\u5b66\u53cd\u5e94\u3002\u8c08\u53ca\u5728\u7b2c\u56db\u7a97\u53e3\u671f\u6bd4\u8d5b\u4e2d\u5c06\u5bf9\u9635\u7684\u5361\u5854\u5c14\u961f\u548c\u9ece\u5df4\u5ae9\u961f\uff0c\u4ed6\u8868\u793a\u505a\u597d\u4e86\u8eab\u4f53\u5bf9\u6297\u7684\u51c6\u5907\u3002\n\n8\u670813\u65e5\u81f317\u65e5\uff0c\u4e2d\u56fd\u7537\u7bee\u5c06\u5728\u4f5b\u5c71\u53c2",
+      "bytes": 23549376,
+      "status": "ok"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/%E5%8F%B0%E6%B9%BE%E7%B1%8DCBA%E2%80%9C%E7%8A%B6%E5%85%83%E2%80%9D%E5%AE%8B%E6%98%95%E6%BE%94%EF%BC%9A%E2%80%9C%E6%89%93%E7%90%83%E5%B0%B1%E6%98%AF%E4%B8%BA%E5%9C%A8%E6%9C%80%E9%AB%98%E8%88%9E%E5%8F%B0%E4%B8%8A%E5%89%8D%E8%BF%9B%E2%80%9D.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "CBA.webm",
+      "sha256": "a355c3e951fb64e3b53c331e0d2a823f03b7c1babdfdcc16c26b5e743ac512df",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "\u4e2d\u56fd\u65b0\u95fb\u793e",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E6%B9%BE%E7%B1%8DCBA%E2%80%9C%E7%8A%B6%E5%85%83%E2%80%9D%E5%AE%8B%E6%98%95%E6%BE%94%EF%BC%9A%E2%80%9C%E6%89%93%E7%90%83%E5%B0%B1%E6%98%AF%E4%B8%BA%E5%9C%A8%E6%9C%80%E9%AB%98%E8%88%9E%E5%8F%B0%E4%B8%8A%E5%89%8D%E8%BF%9B%E2%80%9D.webm",
+      "description": "\u200b\u8fd1\u65e5\uff0c\u5728\u5e7f\u5dde\u9f99\u72ee\u7bee\u7403\u4ff1\u4e50\u90e8\u8bad\u7ec3\u9986\u91cc\uff0c\u7bee\u7403\u7838\u5411\u6728\u5730\u677f\u7684\u201c\u7830\u7830\u201d\u58f0\u6b64\u8d77\u5f7c\u4f0f\uff0c\u978b\u5e95\u6025\u505c\u62d6\u62fd\u7684\u201c\u5431\u560e\u201d\u9510\u54cd\u7a7f\u63d2\u5176\u95f4\u3002\n\u5728\u7403\u573a\u8fb9\u4e0a\uff0c\u5b8b\u6615\u6f94\u4e00\u8fb9\u505a\u8bad\u7ec3\u524d\u7684\u62c9\u4f38\uff0c\u4e00\u8fb9\u8ba4\u771f\u89c2\u5bdf\u7740\u7403\u573a\u4e0a\u961f\u53cb\u4eec\u7684\u4e00\u4e3e\u4e00\u52a8\uff0c\u8fd9\u662f\u521a\u62ff\u4e0b\u4e2d\u56fd\u7537\u5b50\u7bee\u7403\u804c\u4e1a\u8054\u8d5b\uff08CBA\uff09\u9009\u79c0\u5927\u4f1a\u201c\u72b6\u5143\u201d\u7684\u4ed6\u5230\u5927\u9646\u53c2\u8bad\u7684\u7b2c\u4e00\u5929\u3002\n\u5b8b\u6615\u6f94\u751f\u4e8e2003\u5e74\uff0c\u6765\u81ea\u53f0\u6e7e\u82d7\u6817\u30022026\u5e747\u6708CBA\u9009\u79c0\u5927\u4f1a\u4e0a\uff0c\u4ed6\u63a5\u68d2\u9648\u76c8\u9a8f\uff0c\u6210\u4e3a\u7b2c\u4e8c\u4f4d\u6765\u81ea\u53f0\u6e7e\u7684\u201c\u72b6\u5143\u201d\u3002\n\n\u5b8b\u6615\u6f94\u63a5\u53d7\u4e2d\u65b0\u793e\u4e13\u8bbf\u65f6\u8868\u793a\uff0c\u4ed6\u5728\u53f0\u6e7e\u4e00\u76f4\u6709\u5173\u6ce8CBA\u7684\u6bd4\u8d5b\uff0cCBA\u8fd9\u4e2a\u821e\u53f0\u662f\u4ed6\u5f88\u5411\u5f80\u7684\u5730\u65b9\uff0c\u4ed6\u6253\u7403\u5c31\u662f\u4e3a\u4e86\u5728\u6700\u9ad8\u7684\u821e\u53f0\u4e0a\u524d\u8fdb\u3002",
+      "bytes": 52220847,
+      "status": "ok"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/%D8%A8%D8%A7%D8%B2%DB%8C_%D8%A8%D8%B3%DA%A9%D8%AA%D8%A8%D8%A7%D9%84_%D9%85%D9%87%D8%B1%D8%A7%D9%85_%D8%AA%D9%87%D8%B1%D8%A7%D9%86_%D9%88_%D8%B4%D9%87%D8%B1%D8%AF%D8%A7%D8%B1%DB%8C_%DA%AF%D8%B1%DA%AF%D8%A7%D9%86_%D8%A7%D8%B2_%D8%AF%D8%B1%DB%8C%DA%86%D9%87_%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86_%D8%A7%DB%8C%D8%B3%D9%86%D8%A7.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "filename": "commons_1cf7536773.webm",
+      "sha256": "393e5f1c59fcd2256e446a3f97e039ce124d3cc9588b0e019611a0b0dce2af81",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "artist": "\u0627\u06cc\u0633\u0646\u0627",
+      "page_url": "https://commons.wikimedia.org/wiki/File:%D8%A8%D8%A7%D8%B2%DB%8C_%D8%A8%D8%B3%DA%A9%D8%AA%D8%A8%D8%A7%D9%84_%D9%85%D9%87%D8%B1%D8%A7%D9%85_%D8%AA%D9%87%D8%B1%D8%A7%D9%86_%D9%88_%D8%B4%D9%87%D8%B1%D8%AF%D8%A7%D8%B1%DB%8C_%DA%AF%D8%B1%DA%AF%D8%A7%D9%86_%D8%A7%D8%B2_%D8%AF%D8%B1%DB%8C%DA%86%D9%87_%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86_%D8%A7%DB%8C%D8%B3%D9%86%D8%A7.webm",
+      "description": "\u062f\u0631 \u062d\u0633\u0627\u0633\u200c\u062a\u0631\u06cc\u0646 \u0628\u0627\u0632\u06cc \u0647\u0641\u062a\u0647 \u067e\u0646\u062c\u0645 \u0631\u0642\u0627\u0628\u062a\u200c\u0647\u0627\u06cc \u0644\u06cc\u06af \u0628\u0631\u062a\u0631 \u0628\u0633\u06a9\u062a\u0628\u0627\u0644 \u0645\u0631\u062f\u0627\u0646 \u0627\u06cc\u0631\u0627\u0646\u060c \u062a\u06cc\u0645 \u0634\u0647\u0631\u062f\u0627\u0631\u06cc \u06af\u0631\u06af\u0627\u0646 \u0645\u0648\u0641\u0642 \u0634\u062f \u0628\u0631\u0627\u0628\u0631 \u0645\u06cc\u0632\u0628\u0627\u0646 \u062e\u0648\u062f \u0645\u0647\u0631\u0627\u0645 \u062a\u0647\u0631\u0627\u0646 \u0628\u0647 \u067e\u06cc\u0631\u0648\u0632\u06cc \u0628\u0631\u0633\u062f. \u062f\u0631 \u0627\u06cc\u0646 \u0628\u0627\u0632\u06cc \u06a9\u0647 \u0628\u0647 \u0645\u06cc\u0632\u0628\u0627\u0646\u06cc \u0633\u0627\u0644\u0646 \u0645\u0647\u0631\u0627\u0645 \u062f\u0631 \u0634\u0647\u0631 \u0642\u062f\u0633 \u0628\u0631\u06af\u0632\u0627\u0631 \u0634\u062f\u060c \u0634\u0627\u06af\u0631\u062f\u0627\u0646 \u0645\u0635\u0637\u0641\u06cc \u0647\u0627\u0634\u0645\u06cc \u0628\u0627 \u0646\u062a\u06cc\u062c\u0647 \u06f8\u06f1 - \u06f8\u06f4 \u0628\u0631\u0627\u0628\u0631 \u0645\u06cc\u0632\u0628\u0627\u0646 \u062e\u0648\u062f \u067e\u06cc\u0631\u0648\u0632 \u0634\u062f\u0646\u062f.",
+      "bytes": 56884186,
+      "status": "ok"
+    }
+  ],
+  "ingest_note": "Cumulative record of files downloaded from this approved source. Mirrored from data/raw/.../ingest_manifest.json because data/ is gitignored and provenance must be version-controlled.",
+  "eval_usability": {
+    "_note": "Frame-by-frame review of the 2026-10-20 ingest. Wikimedia's basketball category is dominated by news/government media; most clips are interview packages, not continuous game footage. Check this before spending labelling time or re-ingesting.",
+    "usable": {
+      "commons_1cf7536773.webm": "ISNA Sport, continuous Iranian league game, 1280x720, 139s",
+      "Domen_Lorbek_to_Brezec_-_Slovenia_vs_Poland.webm": "EuroBasket game, 640x480, 5s, too distant for +/-5 frame release labelling"
+    },
+    "unusable": {
+      "commons_5701c1358b.webm": "news package: ~17s incidental basketball, then calligraphy/vox pops",
+      "commons_fbaabdf724.webm": "news package: ~32s practice intercut with close-ups, then interview",
+      "CBA.webm": "player profile: mostly talking-head interview against a curtain"
+    },
+    "already_labelled": [
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s001.ogv",
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s002.ogv",
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s003.ogv",
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s004.ogv",
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s005.ogv",
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s006.ogv",
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s007.ogv",
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s008.ogv",
+      "Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s009.ogv",
+      "Ambassador_Nicholas_Burns_plays_basketball_with_Chinese_students_in_Zhijiang_Dong_Autonomous_County.webm"
+    ]
+  }
+}

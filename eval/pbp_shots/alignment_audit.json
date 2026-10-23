@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-22",
+  "audited_by": "human",
+  "source": "alignment_audit.html",
+  "verdicts": {
+    "shot_0041": {
+      "verdict": "misaligned",
+      "notes": ""
+    },
+    "shot_0089": {
+      "verdict": "aligned",
+      "notes": ""
+    },
+    "neg_003": {
+      "verdict": "adjacent",
+      "notes": ""
+    },
+    "neg_006": {
+      "verdict": "misaligned",
+      "notes": ""
+    },
+    "neg_014": {
+      "verdict": "adjacent",
+      "notes": ""
+    }
+  }
+}

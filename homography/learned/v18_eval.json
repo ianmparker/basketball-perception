@@ -1,0 +1,20 @@
+[
+  {
+    "video": "broadcast_01.mp4",
+    "detection_rate": 100.0,
+    "avg_high_conf_keypoints": 6.0,
+    "total_frames": 10
+  },
+  {
+    "video": "broadcast_104.mp4",
+    "detection_rate": 100.0,
+    "avg_high_conf_keypoints": 5.1,
+    "total_frames": 10
+  },
+  {
+    "video": "broadcast_114.mp4",
+    "detection_rate": 100.0,
+    "avg_high_conf_keypoints": 6.0,
+    "total_frames": 10
+  }
+]

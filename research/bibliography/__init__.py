@@ -1,0 +1,1 @@
+"""Bibliography validation and lookup."""

@@ -1,0 +1,64 @@
+{
+  "source_asset_id": "wikimedia-basketball-safe",
+  "purpose": "ball detection footage: game play, free throws, dribbling (safe licenses only)",
+  "generated_at": "2026-10-20T18:39:27+00:00",
+  "allow_share_alike": false,
+  "searches": [
+    "basketball game",
+    "basketball free throw",
+    "basketball shot",
+    "basketball match",
+    "basketball dribbling",
+    "streetball basketball"
+  ],
+  "files": [
+    {
+      "filename": "Ain_Star_Game_2019_-_ASVEL_-_lan_sportif_chalonnais_-_2.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ain_Star_Game_2019_-_ASVEL_-_%C3%89lan_sportif_chalonnais_-_2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ain_Star_Game_2019_-_ASVEL_-_%C3%89lan_sportif_chalonnais_-_2.webm",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Benoît Prieur",
+      "description": "Ain Star Game 2019 - ASVEL - Élan sportif chalonnais, échauffement.",
+      "size_mb": 49.02,
+      "mime": "video/webm",
+      "query": "basketball game"
+    },
+    {
+      "filename": "ShotBug_Press_LIVE_at_the_Langley_Event_Centre_for_the_Vancouver_Bandits_first_practice_of_the_year_02.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/ShotBug_Press_LIVE%21_at_the_Langley_Event_Centre_for_the_Vancouver_Bandits_first_practice_of_the_year_02.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:ShotBug_Press_LIVE!_at_the_Langley_Event_Centre_for_the_Vancouver_Bandits_first_practice_of_the_year_02.webm",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "artist": "Shotbug Press",
+      "description": "The CEBL (Canadian Elite Basketball League) Vancouver Bandits opening practice day at the Langley Event Centre in Langley, May 19, 2023. First home game to take place Saturday, June 3, 2023 against the Calgary Surge.",
+      "size_mb": 76.21,
+      "mime": "video/webm",
+      "query": "basketball shot"
+    },
+    {
+      "filename": "Experime1940.ogv",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Experime1940.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Experime1940.ogv",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Techfilm Studio, Moscow. Director: D.I. Yashin. Camera: E.V. Kashina. Narrator: Professor Walter B. Cannon. Introduced by Professor J.B.S. Haldane.",
+      "description": "Experiments in the Revival of Organisms",
+      "size_mb": 79.59,
+      "mime": "application/ogg",
+      "query": "basketball shot"
+    },
+    {
+      "filename": "Oregon_vs._Washington_St_-_FOX_COLLEGE_FOOTBALL_HIGHLIGHTS.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Oregon_vs._Washington_St_-_FOX_COLLEGE_FOOTBALL_HIGHLIGHTS.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Oregon_vs._Washington_St_-_FOX_COLLEGE_FOOTBALL_HIGHLIGHTS.webm",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "artist": "FOX Sports",
+      "description": "Gardner Minshew throws for 323 yards and 4 touchdowns as Washington State upsets Oregon 34-20.\nFOXSports #CFB #WashingtonState\nSUBSCRIBE to get the latest FOX Sports content: \nAbout FOX Sports:\nWith exclusive highlights, original programming, and behind the scenes footage, FOX Sports' YouTube channel provides the sports content that fans are hungry for. FOX Sports coverage includes: College Basketball, College Football, MLB, NASCAR, NFL, Soccer, UFC, USGA events and the FIFA World Cup. FS1 origi",
+      "size_mb": 86.45,
+      "mime": "video/webm",
+      "query": "basketball free throw"
+    }
+  ]
+}

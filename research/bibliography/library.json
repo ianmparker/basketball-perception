@@ -1,0 +1,3442 @@
+{
+  "version": 1,
+  "updated": "2026-10-21",
+  "entries": [
+    {
+      "key": "arxiv-1408.0777",
+      "type": "paper",
+      "title": "A Multiresolution Stochastic Process Model for Predicting Basketball Possession Outcomes",
+      "authors": [
+        "Daniel Cervone",
+        "Alex D’Amour",
+        "Luke Bornn",
+        "Kirk Goldsberry"
+      ],
+      "year": 2016,
+      "venue": "Journal of the American Statistical Association",
+      "arxiv_id": "1408.0777",
+      "doi": "10.1080/01621459.2016.1141685",
+      "url": "https://arxiv.org/abs/1408.0777",
+      "pdf_url": "https://arxiv.org/pdf/1408.0777",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "EPV blueprint: state to expected points. The coach's value layer, buildable coarsely from court coordinates.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1107.5793",
+      "type": "paper",
+      "title": "The Problem of Shot Selection in Basketball",
+      "authors": [
+        "Brian J. Skinner"
+      ],
+      "year": 2012,
+      "venue": "PLoS ONE",
+      "arxiv_id": "1107.5793",
+      "doi": "10.1371/journal.pone.0030776",
+      "url": "https://arxiv.org/abs/1107.5793",
+      "pdf_url": "https://arxiv.org/pdf/1107.5793",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Formalizes shot selection; a sanity check for any naive xPTS model.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1908.05745",
+      "type": "paper",
+      "title": "A Bayesian Marked Spatial Point Processes Model for Basketball Shot Chart",
+      "authors": [
+        "Jieying Jiao",
+        "Guanyu Hu",
+        "Jun Yan"
+      ],
+      "year": 2020,
+      "venue": "Journal of Quantitative Analysis in Sports",
+      "arxiv_id": "1908.05745",
+      "doi": "10.1515/jqas-2019-0106",
+      "url": "https://arxiv.org/abs/1908.05745",
+      "pdf_url": "https://arxiv.org/pdf/1908.05745",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Bayesian spatial shot-chart model; small-sample shrinkage we should copy.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2006.07513",
+      "type": "paper",
+      "title": "Bayesian Group Learning for Shot Selection of Professional Basketball Players",
+      "authors": [
+        "Guanyu Hu",
+        "Hou‐Cheng Yang",
+        "Yishu Xue"
+      ],
+      "year": 2020,
+      "venue": "Stat",
+      "arxiv_id": "2006.07513",
+      "doi": "10.1002/sta4.324",
+      "url": "https://arxiv.org/abs/2006.07513",
+      "pdf_url": "https://arxiv.org/pdf/2006.07513",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Hierarchical shot selection; the right structure for player-level heterogeneity.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2002.04148",
+      "type": "paper",
+      "title": "The Role of Intrinsic Dimension in High-Resolution Player Tracking Data -- Insights in Basketball",
+      "authors": [
+        "Edgar Santos–Fernández",
+        "Francesco Denti",
+        "Kerrie Lee Mengersen",
+        "Antonietta Mira"
+      ],
+      "year": 2020,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2002.04148",
+      "doi": "10.48550/arxiv.2002.04148",
+      "url": "https://arxiv.org/abs/2002.04148",
+      "pdf_url": "https://arxiv.org/pdf/2002.04148",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Intrinsic dimension of tracking data; warns against over-parameterized feature sets.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2405.01182",
+      "type": "paper",
+      "title": "A Model-Based Approach to Shot Charts Estimation in Basketball",
+      "authors": [
+        "Luca Scrucca",
+        "Dimitris Karlis"
+      ],
+      "year": 2025,
+      "venue": "Computational Statistics",
+      "arxiv_id": "2405.01182",
+      "doi": "10.1007/s00180-025-01599-1",
+      "url": "https://arxiv.org/abs/2405.01182",
+      "pdf_url": "https://arxiv.org/pdf/2405.01182",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Model-based shot chart estimation; alternative to heatmaps for coaching output.",
+      "repo": [
+        "analytics/",
+        "visualization/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1609.04849",
+      "type": "paper",
+      "title": "Predicting Shot Making in Basketball Learnt from Adversarial Multiagent Trajectories",
+      "authors": [
+        "Harmon, Mark",
+        "Ebrahimi, Abdolghani",
+        "Patrick Lucey",
+        "Diego Klabjan"
+      ],
+      "year": 2016,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1609.04849",
+      "doi": "10.48550/arxiv.1609.04849",
+      "url": "https://arxiv.org/abs/1609.04849",
+      "pdf_url": "https://arxiv.org/pdf/1609.04849",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Shot-making from multiagent trajectories; candidate feature set for shot quality.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1405.0231",
+      "type": "paper",
+      "title": "Characterizing the spatial structure of defensive skill in professional basketball",
+      "authors": [
+        "Alexander M. Franks",
+        "Andrew Miller",
+        "Luke Bornn",
+        "Kirk Goldsberry"
+      ],
+      "year": 2015,
+      "venue": "The Annals of Applied Statistics",
+      "arxiv_id": "1405.0231",
+      "doi": "10.1214/14-aoas799",
+      "url": "https://arxiv.org/abs/1405.0231",
+      "pdf_url": "https://arxiv.org/pdf/1405.0231",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "basketball.analytics",
+        "basketball.tactics"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Defensive impact is spatially structured; informs matchup and coverage features.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1612.05502",
+      "type": "paper",
+      "title": "Defensive Player Classification in the National Basketball Association",
+      "authors": [
+        "Neil Seward"
+      ],
+      "year": 2016,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1612.05502",
+      "doi": "10.48550/arxiv.1612.05502",
+      "url": "https://arxiv.org/abs/1612.05502",
+      "pdf_url": "https://arxiv.org/pdf/1612.05502",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "basketball.tactics"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Defensive player classification; prototype for role labels from tracking.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2009.07736",
+      "type": "paper",
+      "title": "HOTA: A Higher Order Metric for Evaluating Multi-object Tracking",
+      "authors": [
+        "Jonathon Luiten",
+        "Aljos̆a Os̆ep",
+        "Patrick Dendorfer",
+        "Philip Torr",
+        "Andreas Geiger",
+        "Laura Leal-Taixé",
+        "Bastian Leibe"
+      ],
+      "year": 2020,
+      "venue": "International Journal of Computer Vision",
+      "arxiv_id": "2009.07736",
+      "doi": "10.1007/s11263-020-01375-2",
+      "url": "https://arxiv.org/abs/2009.07736",
+      "pdf_url": "https://arxiv.org/pdf/2009.07736",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "measurement.evaluation",
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "HOTA decomposes detection, association, and localization. Add it next to MOTA/IDF1.",
+      "repo": [
+        "eval/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1603.00831",
+      "type": "paper",
+      "title": "MOT16: A Benchmark for Multi-Object Tracking",
+      "authors": [
+        "Anton Milan",
+        "Laura Leal-Taixé",
+        "Ian D. Reid",
+        "Stefan Roth",
+        "Konrad Schindler"
+      ],
+      "year": 2016,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1603.00831",
+      "doi": "10.48550/arxiv.1603.00831",
+      "url": "https://arxiv.org/abs/1603.00831",
+      "pdf_url": "https://arxiv.org/pdf/1603.00831",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "measurement.evaluation",
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "The benchmark protocol our exported MOT rows should follow.",
+      "repo": [
+        "eval/",
+        "scripts/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1412.6980",
+      "type": "paper",
+      "title": "Adam: A Method for Stochastic Optimization",
+      "authors": [
+        "Diederik P. Kingma",
+        "Jimmy Lei Ba"
+      ],
+      "year": 2014,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1412.6980",
+      "doi": "10.48550/arxiv.1412.6980",
+      "url": "https://arxiv.org/abs/1412.6980",
+      "pdf_url": "https://arxiv.org/pdf/1412.6980",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations"
+      ],
+      "topics": [],
+      "relevance": "background",
+      "why": "Default optimizer assumption; do not tune it before fixing data and eval.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1502.03167",
+      "type": "paper",
+      "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "authors": [
+        "Sergey Ioffe",
+        "Christian Szegedy"
+      ],
+      "year": 2015,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1502.03167",
+      "doi": "10.48550/arxiv.1502.03167",
+      "url": "https://arxiv.org/abs/1502.03167",
+      "pdf_url": "https://arxiv.org/pdf/1502.03167",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations"
+      ],
+      "topics": [],
+      "relevance": "background",
+      "why": "Normalization choices inside every modern detector; matters when exporting to TensorRT/INT8.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1207.0580",
+      "type": "paper",
+      "title": "Improving neural networks by preventing co-adaptation of feature detectors",
+      "authors": [
+        "Geoffrey E. Hinton",
+        "Nitish Srivastava",
+        "Alex Krizhevsky",
+        "Ilya Sutskever",
+        "Ruslan Salakhutdinov"
+      ],
+      "year": 2012,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1207.0580",
+      "doi": "10.48550/arxiv.1207.0580",
+      "url": "https://arxiv.org/abs/1207.0580",
+      "pdf_url": "https://arxiv.org/pdf/1207.0580",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations"
+      ],
+      "topics": [],
+      "relevance": "background",
+      "why": "Regularization baseline for small basketball datasets; explains why dropout alone will not fix domain shift.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2201.03545",
+      "type": "paper",
+      "title": "A ConvNet for the 2020s",
+      "authors": [
+        "Zhuang Liu",
+        "Hanzi Mao",
+        "Chao-Yuan Wu",
+        "Christoph Feichtenhofer",
+        "Trevor Jackson Darrell",
+        "Saining Xie"
+      ],
+      "year": 2022,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2201.03545",
+      "doi": "10.48550/arxiv.2201.03545",
+      "url": "https://arxiv.org/abs/2201.03545",
+      "pdf_url": "https://arxiv.org/pdf/2201.03545",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Modern CNN baseline; a reminder that transformers are not automatically better on small datasets.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2103.14030",
+      "type": "paper",
+      "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "authors": [
+        "Ze Liu",
+        "Yutong Lin",
+        "Yue Cao",
+        "Han Hu",
+        "Yixuan Wei",
+        "Zheng Zhang",
+        "Stephen Ching-Feng Lin",
+        "Baining Guo"
+      ],
+      "year": 2021,
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "arxiv_id": "2103.14030",
+      "doi": "10.1109/iccv48922.2021.00986",
+      "url": "https://arxiv.org/abs/2103.14030",
+      "pdf_url": "https://arxiv.org/pdf/2103.14030",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "ml.foundations",
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Hierarchical transformer alternative to CNN backbones; useful when small players need multi-scale features.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1706.03762",
+      "type": "paper",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Llion Jones",
+        "Aidan N. Gomez",
+        "Łukasz Kaiser",
+        "Illia Polosukhin"
+      ],
+      "year": 2017,
+      "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+      "arxiv_id": "1706.03762",
+      "doi": null,
+      "url": "https://arxiv.org/abs/1706.03762",
+      "pdf_url": "https://arxiv.org/pdf/1706.03762",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "ml.foundations",
+        "perception.events"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "The sequence-modeling primitive behind DETR, TrackFormer, and temporal event models.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1512.03385",
+      "type": "paper",
+      "title": "Deep Residual Learning for Image Recognition",
+      "authors": [
+        "Kaiming He",
+        "Xiangyu Zhang",
+        "Shaoqing Ren",
+        "Jian Sun"
+      ],
+      "year": 2015,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1512.03385",
+      "doi": "10.48550/arxiv.1512.03385",
+      "url": "https://arxiv.org/abs/1512.03385",
+      "pdf_url": "https://arxiv.org/pdf/1512.03385",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations",
+        "perception.representation"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Residual backbone prior: the default feature extractor for a learned homography or event model, and the baseline a new head must beat.",
+      "repo": [
+        "models/",
+        "homography/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2010.11929",
+      "type": "paper",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "authors": [
+        "Alexey Dosovitskiy",
+        "Lucas Beyer",
+        "Alexander Kolesnikov",
+        "Dirk Weissenborn",
+        "Xiaohua Zhai",
+        "Thomas Unterthiner",
+        "Mostafa Dehghani",
+        "Matthias Minderer",
+        "Georg Heigold",
+        "Sylvain Gelly",
+        "Jakob Uszkoreit",
+        "Neil Houlsby"
+      ],
+      "year": 2020,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2010.11929",
+      "doi": "10.48550/arxiv.2010.11929",
+      "url": "https://arxiv.org/abs/2010.11929",
+      "pdf_url": "https://arxiv.org/pdf/2010.11929",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations",
+        "perception.representation"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "ViT is the backbone of DINOv2, CLIP, and ViTPose; explains patch-token trade-offs at broadcast resolution.",
+      "repo": [
+        "inference/pipeline.py"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2111.06377",
+      "type": "paper",
+      "title": "Masked Autoencoders Are Scalable Vision Learners",
+      "authors": [
+        "Kaiming He",
+        "Xinlei Chen",
+        "Saining Xie",
+        "Yanghao Li",
+        "Piotr Dollár",
+        "Ross Girshick"
+      ],
+      "year": 2021,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2111.06377",
+      "doi": "10.48550/arxiv.2111.06377",
+      "url": "https://arxiv.org/abs/2111.06377",
+      "pdf_url": "https://arxiv.org/pdf/2111.06377",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations",
+        "perception.representation"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Self-supervised pretraining recipe; route to label-efficient basketball features.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2207.11709",
+      "type": "paper",
+      "title": "TVCalib: Camera Calibration for Sports Field Registration in Soccer",
+      "authors": [
+        "Jonas Theiner",
+        "Ralph Ewerth"
+      ],
+      "year": 2023,
+      "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+      "arxiv_id": "2207.11709",
+      "doi": "10.1109/wacv56688.2023.00122",
+      "url": "https://arxiv.org/abs/2207.11709",
+      "pdf_url": "https://arxiv.org/pdf/2207.11709",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.calibration"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Line/keypoint calibration without a fixed camera; strongest reference for the learned-homography phase.",
+      "repo": [
+        "homography/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2404.08401",
+      "type": "paper",
+      "title": "PnLCalib: Sports Field Registration via Points and Lines Optimization",
+      "authors": [
+        "Marc Gutiérrez-Pérez",
+        "Antonio Agudo"
+      ],
+      "year": 2026,
+      "venue": "Computer Vision and Image Understanding",
+      "arxiv_id": "2404.08401",
+      "doi": "10.1016/j.cviu.2026.104712",
+      "url": "https://arxiv.org/abs/2404.08401",
+      "pdf_url": "https://arxiv.org/pdf/2404.08401",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.calibration"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Points+lines optimization; robust when keypoints are sparse, which is our gym-footage regime.",
+      "repo": [
+        "homography/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2404.09807",
+      "type": "paper",
+      "title": "A Universal Protocol to Benchmark Camera Calibration for Sports",
+      "authors": [
+        "Floriane Magera",
+        "Thomas Hoyoux",
+        "Olivier Barnich",
+        "Marc Van Droogenbroeck"
+      ],
+      "year": 2024,
+      "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+      "arxiv_id": "2404.09807",
+      "doi": "10.1109/cvprw63382.2024.00338",
+      "url": "https://arxiv.org/abs/2404.09807",
+      "pdf_url": "https://arxiv.org/pdf/2404.09807",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.calibration",
+        "measurement.evaluation"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "A protocol for comparing calibration methods honestly; adopt it before claiming a learned homography win.",
+      "repo": [
+        "homography/",
+        "eval/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1804.02767",
+      "type": "paper",
+      "title": "YOLOv3: An Incremental Improvement",
+      "authors": [
+        "Joseph Redmon",
+        "Ali Farhadi"
+      ],
+      "year": 2018,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1804.02767",
+      "doi": "10.48550/arxiv.1804.02767",
+      "url": "https://arxiv.org/abs/1804.02767",
+      "pdf_url": "https://arxiv.org/pdf/1804.02767",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "background",
+      "why": "Historical YOLO improvement; read for the multi-scale prediction idea, not the implementation.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1708.02002",
+      "type": "paper",
+      "title": "Focal Loss for Dense Object Detection",
+      "authors": [
+        "Tsung-Yi Lin",
+        "Priya Goyal",
+        "Ross Girshick",
+        "Kaiming He",
+        "Piotr Dollár"
+      ],
+      "year": 2017,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1708.02002",
+      "doi": "10.48550/arxiv.1708.02002",
+      "url": "https://arxiv.org/abs/1708.02002",
+      "pdf_url": "https://arxiv.org/pdf/1708.02002",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Explains why ball detection is hard: foreground/background imbalance and small objects. Directly relevant to 35% recall.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1612.03144",
+      "type": "paper",
+      "title": "Feature Pyramid Networks for Object Detection",
+      "authors": [
+        "Tsung-Yi Lin",
+        "Piotr Dollár",
+        "Ross Girshick",
+        "Kaiming He",
+        "Bharath Hariharan",
+        "Serge Belongie"
+      ],
+      "year": 2016,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1612.03144",
+      "doi": "10.48550/arxiv.1612.03144",
+      "url": "https://arxiv.org/abs/1612.03144",
+      "pdf_url": "https://arxiv.org/pdf/1612.03144",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Multi-scale feature fusion; the standard fix for small, distant players in broadcast frames.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1506.02640",
+      "type": "paper",
+      "title": "You Only Look Once: Unified, Real-Time Object Detection",
+      "authors": [
+        "Joseph Redmon",
+        "Santosh Divvala",
+        "Ross Girshick",
+        "Ali Farhadi"
+      ],
+      "year": 2016,
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "arxiv_id": "1506.02640",
+      "doi": "10.1109/cvpr.2016.91",
+      "url": "https://arxiv.org/abs/1506.02640",
+      "pdf_url": "https://arxiv.org/pdf/1506.02640",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "The single-stage formulation our detector family descends from.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2107.08430",
+      "type": "paper",
+      "title": "YOLOX: Exceeding YOLO Series in 2021",
+      "authors": [
+        "Zheng Ge",
+        "Songtao Liu",
+        "Feng Wang",
+        "Li, Zeming",
+        "Jian Sun"
+      ],
+      "year": 2021,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2107.08430",
+      "doi": "10.48550/arxiv.2107.08430",
+      "url": "https://arxiv.org/abs/2107.08430",
+      "pdf_url": "https://arxiv.org/pdf/2107.08430",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Anchor-free, decoupled-head design that informs modern YOLO configs.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2010.04159",
+      "type": "paper",
+      "title": "Deformable DETR: Deformable Transformers for End-to-End Object Detection",
+      "authors": [
+        "Xizhou Zhu",
+        "Su, Weijie",
+        "Lewei Lu",
+        "Bin Li",
+        "Xiaogang Wang",
+        "Jifeng Dai"
+      ],
+      "year": 2020,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2010.04159",
+      "doi": "10.48550/arxiv.2010.04159",
+      "url": "https://arxiv.org/abs/2010.04159",
+      "pdf_url": "https://arxiv.org/pdf/2010.04159",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Deformable attention fixes DETR's slow convergence; relevant for small objects.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2405.14458",
+      "type": "paper",
+      "title": "YOLOv10: Real-Time End-to-End Object Detection",
+      "authors": [
+        "Ao Wang",
+        "Hui Chen",
+        "Lihao Liu",
+        "Kai Chen",
+        "Zijia Lin",
+        "Jungong Han",
+        "Guiguang Ding"
+      ],
+      "year": 2024,
+      "venue": "neural information processing systems",
+      "arxiv_id": "2405.14458",
+      "doi": "10.52202/079017-3429",
+      "url": "https://arxiv.org/abs/2405.14458",
+      "pdf_url": "https://arxiv.org/pdf/2405.14458",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "NMS-free YOLO; candidate for low-latency inference, but verify small-ball recall.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2402.13616",
+      "type": "paper",
+      "title": "YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information",
+      "authors": [
+        "Chien-Yao Wang",
+        "I-Hau Yeh",
+        "Hong-Yuan Mark Liao"
+      ],
+      "year": 2024,
+      "venue": "Lecture notes in computer science",
+      "arxiv_id": "2402.13616",
+      "doi": "10.1007/978-3-031-72751-1_1",
+      "url": "https://arxiv.org/abs/2402.13616",
+      "pdf_url": "https://arxiv.org/pdf/2402.13616",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Programmable gradient information; relevant if we train from scratch on a small basketball set.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2304.08069",
+      "type": "paper",
+      "title": "DETRs Beat YOLOs on Real-time Object Detection",
+      "authors": [
+        "Zhao, Yian",
+        "Lv, Wenyu",
+        "Shangliang Xu",
+        "Jinman Wei",
+        "Guanzhong Wang",
+        "Dang, Qingqing",
+        "Yi Liu",
+        "Chen, Jie"
+      ],
+      "year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2304.08069",
+      "doi": "10.48550/arxiv.2304.08069",
+      "url": "https://arxiv.org/abs/2304.08069",
+      "pdf_url": "https://arxiv.org/pdf/2304.08069",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Real-time DETR; an alternative to YOLO when the latency budget allows.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1506.01497",
+      "type": "paper",
+      "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "authors": [
+        "Shaoqing Ren",
+        "Kaiming He",
+        "Ross Girshick",
+        "Jian Sun"
+      ],
+      "year": 2016,
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "arxiv_id": "1506.01497",
+      "doi": "10.1109/tpami.2016.2577031",
+      "url": "https://arxiv.org/abs/1506.01497",
+      "pdf_url": "https://arxiv.org/pdf/1506.01497",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Two-stage detector reference; slower than YOLO but a useful accuracy ceiling.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2208.08190",
+      "type": "paper",
+      "title": "DeepSportradar-v1: Computer Vision Dataset for Sports Understanding with High Quality Annotations",
+      "authors": [
+        "Gabriel Van Zandycke",
+        "Vladimir Somers",
+        "Maxime Istasse",
+        "Carlo Del Don",
+        "Davide Zambrano"
+      ],
+      "year": 2022,
+      "venue": "arXiv",
+      "arxiv_id": "2208.08190",
+      "doi": "10.1145/3552437.3555699",
+      "url": "https://arxiv.org/abs/2208.08190",
+      "pdf_url": "https://arxiv.org/pdf/2208.08190",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection",
+        "perception.calibration",
+        "measurement.evaluation"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Basketball benchmark across 15 arenas; its per-arena split is the domain-shift test we lack.",
+      "repo": [
+        "eval/",
+        "data/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2005.12872",
+      "type": "paper",
+      "title": "End-to-End Object Detection with Transformers",
+      "authors": [
+        "Nicolas Carion",
+        "Francisco Massa",
+        "Gabriel Synnaeve",
+        "Nicolas Usunier",
+        "Alexander Kirillov",
+        "Sergey Zagoruyko"
+      ],
+      "year": 2020,
+      "venue": "Lecture notes in computer science",
+      "arxiv_id": "2005.12872",
+      "doi": "10.1007/978-3-030-58452-8_13",
+      "url": "https://arxiv.org/abs/2005.12872",
+      "pdf_url": "https://arxiv.org/pdf/2005.12872",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.detection",
+        "perception.events"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Set-prediction formulation; the basis for query-based detectors and trackers.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2304.02643",
+      "type": "paper",
+      "title": "Segment Anything",
+      "authors": [
+        "Alexander Kirillov",
+        "Eric Mintun",
+        "Nikhila Ravi",
+        "Hanzi Mao",
+        "Chloe Rolland",
+        "Laura Gustafson",
+        "Tete Xiao",
+        "Spencer Whitehead",
+        "Alexander C. Berg",
+        "Wan-Yen Lo",
+        "Piotr Dollar",
+        "Ross Girshick"
+      ],
+      "year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2304.02643",
+      "doi": "10.48550/arxiv.2304.02643",
+      "url": "https://arxiv.org/abs/2304.02643",
+      "pdf_url": "https://arxiv.org/pdf/2304.02643",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection",
+        "perception.representation"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Promptable segmentation; candidate for player/referee masks and annotation bootstrapping.",
+      "repo": [
+        "research/knowledge/perception/05-representation-learning.md"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2505.03991",
+      "type": "paper",
+      "title": "Deep Learning for Sports Video Event Detection: Tasks, Datasets, Methods, and Challenges",
+      "authors": [
+        "Hao Ying Xu",
+        "Arbind Agrahari Baniya",
+        "Sam Well",
+        "Mohamed Reda Bouadjenek",
+        "Richard Dazeley",
+        "Sunil Aryal"
+      ],
+      "year": 2025,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2505.03991",
+      "doi": "10.48550/arxiv.2505.03991",
+      "url": "https://arxiv.org/abs/2505.03991",
+      "pdf_url": "https://arxiv.org/pdf/2505.03991",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.events"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Survey map of sports event detection; use it to scope our event layer before adding models.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2503.00147",
+      "type": "paper",
+      "title": "Precise Event Spotting in Sports Videos: Solving Long-Range Dependency and Class Imbalance",
+      "authors": [
+        "Sanchayan Santra",
+        "Vishal M. Chudasama",
+        "Pankaj Wasnik",
+        "Vineeth Nallure Balasubramanian"
+      ],
+      "year": 2025,
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "arxiv_id": "2503.00147",
+      "doi": "10.1109/cvpr52734.2025.00301",
+      "url": "https://arxiv.org/abs/2503.00147",
+      "pdf_url": "https://arxiv.org/pdf/2503.00147",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.events"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Long-range dependency + class imbalance for event spotting; matches our sparse-event problem.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2404.05392",
+      "type": "paper",
+      "title": "T-DEED: Temporal-Discriminability Enhancer Encoder-Decoder for Precise Event Spotting in Sports Videos",
+      "authors": [
+        "Artur Xarles",
+        "Sérgio Escalera",
+        "Thomas Baltzer Moeslund",
+        "Albert Clapés"
+      ],
+      "year": 2024,
+      "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+      "arxiv_id": "2404.05392",
+      "doi": "10.1109/cvprw63382.2024.00345",
+      "url": "https://arxiv.org/abs/2404.05392",
+      "pdf_url": "https://arxiv.org/pdf/2404.05392",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.events"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Precise event spotting architecture; candidate for shot/pass temporal localization.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2607.21267",
+      "type": "paper",
+      "title": "BasketEvent: Understanding Who Did What and When in Basketball Videos",
+      "authors": [
+        "Yu Zhang",
+        "Jiayuan Rao",
+        "Haoning Wu",
+        "Wei Xie"
+      ],
+      "year": 2026,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2607.21267",
+      "doi": "10.48550/arxiv.2607.21267",
+      "url": "https://arxiv.org/abs/2607.21267",
+      "pdf_url": "https://arxiv.org/pdf/2607.21267",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.events",
+        "basketball.ontology"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Player-grounded 10-event taxonomy from NBA play-by-play; closest public match to our event schema.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2608.19646",
+      "type": "paper",
+      "title": "PL-NBA: A Possession-level Universal Basketball Video Dataset Supporting Multiple Visual Understanding Tasks",
+      "authors": [
+        "Yunhao Zhao",
+        "Haoying Sun",
+        "Jiarui Li",
+        "Zhuming Wang",
+        "Ya Jing",
+        "Xiangbo Shu",
+        "Lifang Wu",
+        "Changwen Chen"
+      ],
+      "year": 2026,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2608.19646",
+      "doi": "10.48550/arxiv.2608.19646",
+      "url": "https://arxiv.org/abs/2608.19646",
+      "pdf_url": "https://arxiv.org/pdf/2608.19646",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.events",
+        "basketball.ontology"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Possession-level clips with event and caption labels; maps directly to our possession state machine.",
+      "repo": [
+        "events/",
+        "inference/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2105.07404",
+      "type": "paper",
+      "title": "MultiSports: A Multi-Person Video Dataset of Spatio-Temporally Localized Sports Actions",
+      "authors": [
+        "Yixuan Li",
+        "Lei Chen",
+        "Runyu He",
+        "Zhenzhi Wang",
+        "Gangshan Wu",
+        "Limin Wang"
+      ],
+      "year": 2021,
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "arxiv_id": "2105.07404",
+      "doi": "10.1109/iccv48922.2021.01328",
+      "url": "https://arxiv.org/abs/2105.07404",
+      "pdf_url": "https://arxiv.org/pdf/2105.07404",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.events",
+        "measurement.evaluation"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Spatio-temporal action localization, includes basketball; test bed for event spotting.",
+      "repo": [
+        "events/",
+        "eval/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2303.07399",
+      "type": "paper",
+      "title": "RTMPose: Real-Time Multi-Person Pose Estimation based on MMPose",
+      "authors": [
+        "Tao Jiang",
+        "Lu, Peng",
+        "Li Zhang",
+        "Ningsheng Ma",
+        "Han, Rui",
+        "Chengqi Lyu",
+        "Yining Li",
+        "Chen, Kai"
+      ],
+      "year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2303.07399",
+      "doi": "10.48550/arxiv.2303.07399",
+      "url": "https://arxiv.org/abs/2303.07399",
+      "pdf_url": "https://arxiv.org/pdf/2303.07399",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.pose"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Real-time top-down pose; candidate to replace YOLOv8-pose on CPU/edge.",
+      "repo": [
+        "inference/pipeline.py"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1812.08008",
+      "type": "paper",
+      "title": "OpenPose: Realtime Multi-Person 2D Pose Estimation Using Part Affinity Fields",
+      "authors": [
+        "Zhe Cao",
+        "Gines Hidalgo",
+        "Tomas Simon",
+        "Shih-En Wei",
+        "Yaser Ajmal Sheikh"
+      ],
+      "year": 2019,
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "arxiv_id": "1812.08008",
+      "doi": "10.1109/tpami.2019.2929257",
+      "url": "https://arxiv.org/abs/1812.08008",
+      "pdf_url": "https://arxiv.org/pdf/1812.08008",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.pose"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Bottom-up pose reference; compares with the top-down YOLO-pose we run.",
+      "repo": [
+        "inference/pipeline.py"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2204.12484",
+      "type": "paper",
+      "title": "ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation",
+      "authors": [
+        "Yufei Xu",
+        "Jing Zhang",
+        "Qiming Zhang",
+        "Dacheng Tao"
+      ],
+      "year": 2022,
+      "venue": "neural information processing systems",
+      "arxiv_id": "2204.12484",
+      "doi": "10.52202/068431-2795",
+      "url": "https://arxiv.org/abs/2204.12484",
+      "pdf_url": "https://arxiv.org/pdf/2204.12484",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.pose"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "ViT pose baseline; strongest accuracy family if we can afford the compute.",
+      "repo": [
+        "inference/pipeline.py"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2503.20781",
+      "type": "paper",
+      "title": "BASKET: A Large-Scale Video Dataset for Fine-Grained Skill Estimation",
+      "authors": [
+        "Yulu Pan",
+        "Ce Zhang",
+        "Gedas Bertasius"
+      ],
+      "year": 2025,
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "arxiv_id": "2503.20781",
+      "doi": "10.1109/cvpr52734.2025.02696",
+      "url": "https://arxiv.org/abs/2503.20781",
+      "pdf_url": "https://arxiv.org/pdf/2503.20781",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.pose",
+        "perception.events"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "20 fine-grained skills over 4,477 hours; long-term coaching taxonomy, not a near-term benchmark.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2304.07193",
+      "type": "paper",
+      "title": "DINOv2: Learning Robust Visual Features without Supervision",
+      "authors": [
+        "Maxime Oquab",
+        "Timothée Darcet",
+        "Théo Moutakanni",
+        "Huy V. Vo",
+        "Marc Szafraniec",
+        "Vasil Khalidov",
+        "Pierre Fernandez",
+        "Daniel Haziza",
+        "Francisco Massa",
+        "Alaaeldin El-Nouby",
+        "Mahmoud Assran",
+        "Nicolas Ballas",
+        "Wojciech Galuba",
+        "Russell Howes",
+        "Po-Yao Huang",
+        "Shang-Wen Daniel Li",
+        "Ishan Misra",
+        "Michael Rabbat",
+        "Vasu Sharma",
+        "Gabriel Synnaeve",
+        "Hu Xu",
+        "Hervé Jeǵou",
+        "Julien Mairal",
+        "Patrick Labatut",
+        "Armand Joulin",
+        "Piotr Bojanowski"
+      ],
+      "year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2304.07193",
+      "doi": "10.48550/arxiv.2304.07193",
+      "url": "https://arxiv.org/abs/2304.07193",
+      "pdf_url": "https://arxiv.org/pdf/2304.07193",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.representation"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Strong frozen features without labels; best candidate for ReID and team clustering when labels are scarce.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2103.00020",
+      "type": "paper",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "authors": [
+        "Alec Radford",
+        "Jong Wook Kim",
+        "Chris Hallacy",
+        "Ramesh, Aditya",
+        "Gabriel Goh",
+        "Sandhini Agarwal",
+        "Girish Sastry",
+        "Amanda Askell",
+        "Pamela Mishkin",
+        "Jack Clark",
+        "Gretchen Marie Krueger",
+        "Ilya Sutskever"
+      ],
+      "year": 2021,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2103.00020",
+      "doi": "10.48550/arxiv.2103.00020",
+      "url": "https://arxiv.org/abs/2103.00020",
+      "pdf_url": "https://arxiv.org/pdf/2103.00020",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.representation"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Zero-shot/transfer features and text prompts; the current CLIP team-ID alternative lives here.",
+      "repo": [
+        "inference/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2105.03247",
+      "type": "paper",
+      "title": "MOTR: End-to-End Multiple-Object Tracking with Transformer",
+      "authors": [
+        "Fangao Zeng",
+        "Bin Dong",
+        "Yuang Zhang",
+        "Tiancai Wang",
+        "Xiangyu Zhang",
+        "Yichen Wei"
+      ],
+      "year": 2022,
+      "venue": "Lecture notes in computer science",
+      "arxiv_id": "2105.03247",
+      "doi": "10.1007/978-3-031-19812-0_38",
+      "url": "https://arxiv.org/abs/2105.03247",
+      "pdf_url": "https://arxiv.org/pdf/2105.03247",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "background",
+      "why": "End-to-end MOT with track queries; read for the query formulation.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2508.15299",
+      "type": "paper",
+      "title": "BasketLiDAR: The First LiDAR-Camera Multimodal Dataset for Professional Basketball MOT",
+      "authors": [
+        "Ryunosuke Hayashi",
+        "Kohei Torimi",
+        "Rokuto Nagata",
+        "Kazuma Ikeda",
+        "Ozora Sako",
+        "Taichi Nakamura",
+        "Masaki Tani",
+        "Yoshimitsu Aoki",
+        "Kentaro Yoshioka"
+      ],
+      "year": 2025,
+      "venue": "arXiv",
+      "arxiv_id": "2508.15299",
+      "doi": "10.1145/3728423.3759401",
+      "url": "https://arxiv.org/abs/2508.15299",
+      "pdf_url": "https://arxiv.org/pdf/2508.15299",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "background",
+      "why": "LiDAR+camera basketball MOT; long-term multimodal option, not in scope now.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2101.02702",
+      "type": "paper",
+      "title": "TrackFormer: Multi-Object Tracking with Transformers",
+      "authors": [
+        "Tim Meinhardt",
+        "Alexander Kirillov",
+        "Laura Leal-Taixé",
+        "Christoph Feichtenhofer"
+      ],
+      "year": 2022,
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "arxiv_id": "2101.02702",
+      "doi": "10.1109/cvpr52688.2022.00864",
+      "url": "https://arxiv.org/abs/2101.02702",
+      "pdf_url": "https://arxiv.org/pdf/2101.02702",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "background",
+      "why": "Track queries with transformers; same caveat as MOTR.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2012.15460",
+      "type": "paper",
+      "title": "TransTrack: Multiple Object Tracking with Transformer",
+      "authors": [
+        "Peize Sun",
+        "Jinkun Cao",
+        "Yi Jiang",
+        "Rufeng Zhang",
+        "Enze Xie",
+        "Zehuan Yuan",
+        "Changhu Wang",
+        "Ping Luo"
+      ],
+      "year": 2020,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2012.15460",
+      "doi": "10.48550/arxiv.2012.15460",
+      "url": "https://arxiv.org/abs/2012.15460",
+      "pdf_url": "https://arxiv.org/pdf/2012.15460",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "background",
+      "why": "Transformer tracking alternative; not a near-term replacement.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1703.07402",
+      "type": "paper",
+      "title": "Simple Online and Realtime Tracking with a Deep Association Metric",
+      "authors": [
+        "Nicolai Wojke",
+        "Alex Bewley",
+        "Dietrich W. R. Paulus"
+      ],
+      "year": 2017,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "1703.07402",
+      "doi": "10.48550/arxiv.1703.07402",
+      "url": "https://arxiv.org/abs/1703.07402",
+      "pdf_url": "https://arxiv.org/pdf/1703.07402",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Appearance embedding for association; the ReID branch we do not yet run.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2406.19655",
+      "type": "paper",
+      "title": "Basketball-SORT: An Association Method for Complex Multi-object Occlusion Problems in Basketball Multi-object Tracking",
+      "authors": [
+        "Qingrui Hu",
+        "Atom Scott",
+        "Calvin Yeung",
+        "Keisuke Fujii"
+      ],
+      "year": 2024,
+      "venue": "Multimedia Tools and Applications",
+      "arxiv_id": "2406.19655",
+      "doi": "10.1007/s11042-024-20360-2",
+      "url": "https://arxiv.org/abs/2406.19655",
+      "pdf_url": "https://arxiv.org/pdf/2406.19655",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Basketball-specific occlusion handling; candidate for our occlusion failure cases.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2206.14651",
+      "type": "paper",
+      "title": "BoT-SORT: Robust Associations Multi-Pedestrian Tracking",
+      "authors": [
+        "Nir Aharon",
+        "Roy Orfaig",
+        "B.Z. Bobrovsky"
+      ],
+      "year": 2022,
+      "venue": "arXiv (Cornell University)",
+      "arxiv_id": "2206.14651",
+      "doi": "10.48550/arxiv.2206.14651",
+      "url": "https://arxiv.org/abs/2206.14651",
+      "pdf_url": "https://arxiv.org/pdf/2206.14651",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Camera-motion compensation and improved association; direct upgrade path for broadcast cuts/zooms.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2110.06864",
+      "type": "paper",
+      "title": "ByteTrack: Multi-Object Tracking by Associating Every Detection Box",
+      "authors": [
+        "Yifu Zhang",
+        "Peize Sun",
+        "Yi Jiang",
+        "Dongdong Yu",
+        "Fucheng Weng",
+        "Zehuan Yuan",
+        "Ping Luo",
+        "Wenyu Liu",
+        "Xinggang Wang"
+      ],
+      "year": 2022,
+      "venue": "Lecture notes in computer science",
+      "arxiv_id": "2110.06864",
+      "doi": "10.1007/978-3-031-20047-2_1",
+      "url": "https://arxiv.org/abs/2110.06864",
+      "pdf_url": "https://arxiv.org/pdf/2110.06864",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Current tracker. Its low-score association is exactly the regime of our sparse ball detections.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1602.00763",
+      "type": "paper",
+      "title": "Simple Online and Realtime Tracking",
+      "authors": [
+        "Alex Bewley",
+        "Zongyuan Ge",
+        "Lionel Ott",
+        "Fabio Tozeto Ramos",
+        "Ben Upcroft"
+      ],
+      "year": 2016,
+      "venue": "Proceedings - International Conference on Image Processing",
+      "arxiv_id": "1602.00763",
+      "doi": "10.1109/icip.2016.7533003",
+      "url": "https://arxiv.org/abs/1602.00763",
+      "pdf_url": "https://arxiv.org/pdf/1602.00763",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "The Kalman + Hungarian baseline every tracker in this repo extends.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2004.01888",
+      "type": "paper",
+      "title": "FairMOT: On the Fairness of Detection and Re-identification in Multiple Object Tracking",
+      "authors": [
+        "Yifu Zhang",
+        "Chunyu Wang",
+        "Xinggang Wang",
+        "Wenjun Zeng",
+        "Wenyu Liu"
+      ],
+      "year": 2021,
+      "venue": "International Journal of Computer Vision",
+      "arxiv_id": "2004.01888",
+      "doi": "10.1007/s11263-021-01513-4",
+      "url": "https://arxiv.org/abs/2004.01888",
+      "pdf_url": "https://arxiv.org/pdf/2004.01888",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Joint detection + ReID; explains the trade-off we face when adding an embedding head.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2203.14360",
+      "type": "paper",
+      "title": "Observation-Centric SORT: Rethinking SORT for Robust Multi-Object Tracking",
+      "authors": [
+        "Jinkun Cao",
+        "Jiangmiao Pang",
+        "Xinshuo Weng",
+        "Rawal Khirodkar",
+        "Kris Kitani"
+      ],
+      "year": 2023,
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "arxiv_id": "2203.14360",
+      "doi": "10.1109/cvpr52729.2023.00934",
+      "url": "https://arxiv.org/abs/2203.14360",
+      "pdf_url": "https://arxiv.org/pdf/2203.14360",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Observation-centric update; addresses Kalman drift during long occlusions.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2202.13514",
+      "type": "paper",
+      "title": "StrongSORT: Make DeepSORT Great Again",
+      "authors": [
+        "Yunhao Du",
+        "Zhicheng Zhao",
+        "Yang Song",
+        "Yanyun Zhao",
+        "Fei Su",
+        "Tao Gong",
+        "Hongying Meng"
+      ],
+      "year": 2023,
+      "venue": "IEEE Transactions on Multimedia",
+      "arxiv_id": "2202.13514",
+      "doi": "10.1109/tmm.2023.3240881",
+      "url": "https://arxiv.org/abs/2202.13514",
+      "pdf_url": "https://arxiv.org/pdf/2202.13514",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Strong ReID + tracker baseline; useful ablation for appearance features.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2304.05170",
+      "type": "paper",
+      "title": "SportsMOT: A Large Multi-Object Tracking Dataset in Multiple Sports Scenes",
+      "authors": [
+        "Yutao Cui",
+        "Chenkai Zeng",
+        "Xiaoyu Zhao",
+        "Yichun Yang",
+        "Gangshan Wu",
+        "Limin Wang"
+      ],
+      "year": 2023,
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "arxiv_id": "2304.05170",
+      "doi": "10.1109/iccv51070.2023.00910",
+      "url": "https://arxiv.org/abs/2304.05170",
+      "pdf_url": "https://arxiv.org/pdf/2304.05170",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking",
+        "measurement.evaluation"
+      ],
+      "topics": [],
+      "relevance": "core",
+      "why": "Sports MOT with fast motion and camera movement; closest public proxy for our tracking scorecard.",
+      "repo": [
+        "eval/",
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2003.12039",
+      "type": "paper",
+      "title": "RAFT: Recurrent All-Pairs Field Transforms for Optical Flow",
+      "authors": [
+        "Zachary Teed",
+        "Jia Deng"
+      ],
+      "year": 2020,
+      "venue": "Lecture notes in computer science",
+      "arxiv_id": "2003.12039",
+      "doi": "10.1007/978-3-030-58536-5_24",
+      "url": "https://arxiv.org/abs/2003.12039",
+      "pdf_url": "https://arxiv.org/pdf/2003.12039",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": true,
+      "tracks": [
+        "perception.tracking",
+        "perception.events"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "Learned optical flow; candidate for ball gap-filling and camera motion compensation.",
+      "repo": [
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-2503.18282",
+      "type": "paper",
+      "title": "TrackID3x3: A Dataset and Algorithm for Multi-Player Tracking with Identification and Pose Estimation in 3x3 Basketball Full-court Videos",
+      "authors": [
+        "Kazuhiro Yamada",
+        "Li Yin",
+        "Qingrui Hu",
+        "Ning Ding",
+        "Shunsuke Iwashita",
+        "Jun Ichikawa",
+        "Kiwamu Kotani",
+        "Calvin Yeung",
+        "Keisuke Fujii"
+      ],
+      "year": 2025,
+      "venue": "arXiv",
+      "arxiv_id": "2503.18282",
+      "doi": "10.1145/3728423.3759400",
+      "url": "https://arxiv.org/abs/2503.18282",
+      "pdf_url": "https://arxiv.org/pdf/2503.18282",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.tracking",
+        "perception.pose"
+      ],
+      "topics": [],
+      "relevance": "supporting",
+      "why": "ID + pose in 3x3 full-court; relevant to fixed-camera gym footage.",
+      "repo": [
+        "tracking/",
+        "inference/pipeline.py"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "szeliski2022",
+      "type": "book",
+      "title": "Computer Vision: Algorithms and Applications (2nd ed.)",
+      "authors": [
+        "Richard Szeliski"
+      ],
+      "year": 2022,
+      "venue": "Springer",
+      "url": "https://szeliski.org/Book/",
+      "pdf_url": null,
+      "access": "open_access",
+      "license": "Free personal download from the author; do not redistribute",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.calibration",
+        "perception.detection",
+        "ml.foundations"
+      ],
+      "topics": [
+        "geometry",
+        "homography",
+        "SfM",
+        "filtering",
+        "tracking"
+      ],
+      "relevance": "core",
+      "why": "The geometry/filtering reference. Chapters 2, 8 and 9 map directly to our homography and tracking code.",
+      "repo": [
+        "homography/",
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "prince2023",
+      "type": "book",
+      "title": "Understanding Deep Learning",
+      "authors": [
+        "Simon J. D. Prince"
+      ],
+      "year": 2023,
+      "venue": "MIT Press",
+      "url": "https://udlbook.github.io/udlbook/",
+      "pdf_url": null,
+      "access": "open_access",
+      "license": "Free PDF from the author; publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations"
+      ],
+      "topics": [
+        "deep learning",
+        "training",
+        "transformers",
+        "generalization"
+      ],
+      "relevance": "core",
+      "why": "The clearest modern DL text; read it before touching architecture. Free PDF from the author.",
+      "repo": [
+        "models/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "goodfellow2016",
+      "type": "book",
+      "title": "Deep Learning",
+      "authors": [
+        "Ian Goodfellow",
+        "Yoshua Bengio",
+        "Aaron Courville"
+      ],
+      "year": 2016,
+      "venue": "MIT Press",
+      "url": "https://www.deeplearningbook.org/",
+      "pdf_url": null,
+      "access": "open_access",
+      "license": "Free HTML edition; publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations"
+      ],
+      "topics": [
+        "optimization",
+        "regularization",
+        "representation learning"
+      ],
+      "relevance": "supporting",
+      "why": "Reference for optimization, regularization, and the math behind the losses. Free HTML edition.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "d2l2023",
+      "type": "book",
+      "title": "Dive into Deep Learning",
+      "authors": [
+        "Aston Zhang",
+        "Zachary C. Lipton",
+        "Mu Li",
+        "Alex J. Smola"
+      ],
+      "year": 2023,
+      "venue": "Cambridge University Press",
+      "url": "https://d2l.ai/",
+      "pdf_url": null,
+      "access": "open_access",
+      "license": "CC BY-SA 4.0 (check per chapter)",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations",
+        "perception.detection"
+      ],
+      "topics": [
+        "notebooks",
+        "CNN",
+        "detection",
+        "transformers"
+      ],
+      "relevance": "supporting",
+      "why": "Executable notebooks for detection, CNN/transformer training; good for onboarding.",
+      "repo": [
+        "research/knowledge/ml/01-foundations.md"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "murphy2022",
+      "type": "book",
+      "title": "Probabilistic Machine Learning: An Introduction",
+      "authors": [
+        "Kevin P. Murphy"
+      ],
+      "year": 2022,
+      "venue": "MIT Press",
+      "url": "https://probml.github.io/pml-book/book1.html",
+      "pdf_url": null,
+      "access": "open_access",
+      "license": "Free PDF from the author; publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations",
+        "measurement.experiment"
+      ],
+      "topics": [
+        "probability",
+        "Bayesian",
+        "calibration",
+        "uncertainty"
+      ],
+      "relevance": "core",
+      "why": "The reference for probabilistic modeling, calibration, and uncertainty; needed for EPV-style models.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "suttonbarto2018",
+      "type": "book",
+      "title": "Reinforcement Learning: An Introduction (2nd ed.)",
+      "authors": [
+        "Richard S. Sutton",
+        "Andrew G. Barto"
+      ],
+      "year": 2018,
+      "venue": "MIT Press",
+      "url": "http://incompleteideas.net/book/the-book.html",
+      "pdf_url": null,
+      "access": "open_access",
+      "license": "Free PDF from the authors; publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "ml.foundations",
+        "basketball.tactics"
+      ],
+      "topics": [
+        "RL",
+        "value",
+        "policy",
+        "MDP"
+      ],
+      "relevance": "background",
+      "why": "Frames sequential decisions as value estimation; the conceptual bridge from EPV to policy.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "hartley2004",
+      "type": "book",
+      "title": "Multiple View Geometry in Computer Vision (2nd ed.)",
+      "authors": [
+        "Richard Hartley",
+        "Andrew Zisserman"
+      ],
+      "year": 2004,
+      "venue": "Cambridge University Press",
+      "url": null,
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.calibration"
+      ],
+      "topics": [
+        "projective geometry",
+        "DLT",
+        "camera model"
+      ],
+      "relevance": "core",
+      "why": "The definitive treatment of projective geometry, DLT, and camera models behind every homography we fit.",
+      "repo": [
+        "homography/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "citation"
+      }
+    },
+    {
+      "key": "forsyth2012",
+      "type": "book",
+      "title": "Computer Vision: A Modern Approach (2nd ed.)",
+      "authors": [
+        "David A. Forsyth",
+        "Jean Ponce"
+      ],
+      "year": 2012,
+      "venue": "Pearson",
+      "url": null,
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection",
+        "perception.tracking"
+      ],
+      "topics": [
+        "features",
+        "recognition",
+        "geometry"
+      ],
+      "relevance": "supporting",
+      "why": "Classical detection/recognition foundations; useful vocabulary for feature pipelines.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "citation"
+      }
+    },
+    {
+      "key": "gonzalez2018",
+      "type": "book",
+      "title": "Digital Image Processing (4th ed.)",
+      "authors": [
+        "Rafael C. Gonzalez",
+        "Richard E. Woods"
+      ],
+      "year": 2018,
+      "venue": "Pearson",
+      "url": null,
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.detection"
+      ],
+      "topics": [
+        "filtering",
+        "morphology",
+        "color"
+      ],
+      "relevance": "background",
+      "why": "Filtering, morphology, and color-space reference for preprocessing experiments.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "citation"
+      }
+    },
+    {
+      "key": "torralba2024",
+      "type": "book",
+      "title": "Foundations of Computer Vision",
+      "authors": [
+        "Antonio Torralba",
+        "Phillip Isola",
+        "William T. Freeman"
+      ],
+      "year": 2024,
+      "venue": "MIT Press",
+      "url": null,
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.representation",
+        "ml.foundations"
+      ],
+      "topics": [
+        "vision",
+        "representation",
+        "deep learning"
+      ],
+      "relevance": "supporting",
+      "why": "Modern MIT CV text bridging classical vision and deep representation learning.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "citation"
+      }
+    },
+    {
+      "key": "oliver2004",
+      "type": "book",
+      "title": "Basketball on Paper: Rules and Tools for Performance Analysis",
+      "authors": [
+        "Dean Oliver"
+      ],
+      "year": 2004,
+      "venue": "Brassey's",
+      "url": "https://openlibrary.org/works/OL8923828W",
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "measurement.evaluation"
+      ],
+      "topics": [
+        "four factors",
+        "possessions",
+        "efficiency",
+        "analysis"
+      ],
+      "relevance": "core",
+      "why": "Origin of the Four Factors and possession-based thinking; the vocabulary every basketball analytics note should use.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "fontanella2006",
+      "type": "book",
+      "title": "The Physics of Basketball",
+      "authors": [
+        "John J. Fontanella"
+      ],
+      "year": 2006,
+      "venue": "Johns Hopkins University Press",
+      "url": "https://openlibrary.org/works/OL8396947W",
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "perception.events"
+      ],
+      "topics": [
+        "physics",
+        "trajectory",
+        "bounce",
+        "shot"
+      ],
+      "relevance": "supporting",
+      "why": "Bounce, spin, and shot physics; informs ball trajectory priors and shot/rebound event rules.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "goldsberry2019",
+      "type": "book",
+      "title": "SprawlBall: A Visual Tour of the New Era of the NBA",
+      "authors": [
+        "Kirk Goldsberry"
+      ],
+      "year": 2019,
+      "venue": "Houghton Mifflin Harcourt",
+      "url": "https://openlibrary.org/works/OL20152303W",
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "basketball.tactics"
+      ],
+      "topics": [
+        "shot charts",
+        "spacing",
+        "NBA history"
+      ],
+      "relevance": "supporting",
+      "why": "Shot-location history and spatial value; the narrative context for our shot charts.",
+      "repo": [
+        "visualization/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "taylor2016",
+      "type": "book",
+      "title": "Thinking Basketball",
+      "authors": [
+        "Ben Taylor"
+      ],
+      "year": 2016,
+      "venue": "Self-published",
+      "url": "https://openlibrary.org/works/OL20884767W",
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.tactics",
+        "basketball.analytics"
+      ],
+      "topics": [
+        "tactics",
+        "evaluation",
+        "coaching"
+      ],
+      "relevance": "supporting",
+      "why": "Concept-first tactics and player evaluation; useful for translating tracking output into coaching language.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "krause2000",
+      "type": "book",
+      "title": "Basketball Skills & Drills",
+      "authors": [
+        "Jerry Krause",
+        "Don Meyer",
+        "Jerry Meyer"
+      ],
+      "year": 2000,
+      "venue": "Human Kinetics",
+      "url": "https://openlibrary.org/works/OL9361915M",
+      "pdf_url": null,
+      "access": "purchase",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.tactics"
+      ],
+      "topics": [
+        "skills",
+        "drills",
+        "coaching"
+      ],
+      "relevance": "supporting",
+      "why": "Drill and skill taxonomy; grounds the fine-grained action labels a coaching product needs.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "citation"
+      }
+    },
+    {
+      "key": "fiba2026",
+      "type": "standard",
+      "title": "Official Basketball Rules 2026",
+      "authors": [
+        "FIBA"
+      ],
+      "year": 2026,
+      "venue": "FIBA",
+      "url": "https://assets.fiba.basketball/image/upload/documents-corporate-fiba-official-rules-2026-v1-1.pdf",
+      "pdf_url": "https://assets.fiba.basketball/image/upload/documents-corporate-fiba-official-rules-2026-v1-1.pdf",
+      "access": "official_web",
+      "license": "FIBA copyright; free download; do not redistribute",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.rules",
+        "basketball.ontology"
+      ],
+      "topics": [
+        "rules",
+        "court dimensions",
+        "violations",
+        "fouls"
+      ],
+      "relevance": "core",
+      "why": "The rule source for court dimensions, violations, fouls, and timing outside the NBA.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "nba2025rules",
+      "type": "standard",
+      "title": "Official 2025-26 NBA Playing Rules",
+      "authors": [
+        "NBA"
+      ],
+      "year": 2025,
+      "venue": "NBA",
+      "url": "https://cdn.nba.com/manage/2026/01/Official-2025-26-NBA-Playing-Rules.pdf",
+      "pdf_url": "https://cdn.nba.com/manage/2026/01/Official-2025-26-NBA-Playing-Rules.pdf",
+      "access": "official_web",
+      "license": "NBA copyright; free download; do not redistribute",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.rules",
+        "basketball.ontology",
+        "basketball.officiating"
+      ],
+      "topics": [
+        "rules",
+        "NBA",
+        "officiating",
+        "replay"
+      ],
+      "relevance": "core",
+      "why": "NBA-specific dimensions, fouls, and replay rules; the source for NBA-vs-FIBA differences.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "nba_stats_glossary",
+      "type": "web",
+      "title": "NBA Stats Glossary",
+      "authors": [
+        "NBA"
+      ],
+      "year": 2026,
+      "venue": "NBA.com",
+      "url": "https://www.nba.com/stats/help/glossary",
+      "pdf_url": null,
+      "access": "official_web",
+      "license": "NBA copyright; reference use",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "basketball.ontology"
+      ],
+      "topics": [
+        "glossary",
+        "stats",
+        "tracking"
+      ],
+      "relevance": "core",
+      "why": "Official definitions of tracking and box-score terms; use these names in the event schema.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "bref_glossary",
+      "type": "web",
+      "title": "Basketball-Reference Glossary",
+      "authors": [
+        "Sports Reference"
+      ],
+      "year": 2026,
+      "venue": "Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/about/glossary.html",
+      "pdf_url": null,
+      "access": "official_web",
+      "license": "Sports Reference terms; reference use",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "basketball.ontology"
+      ],
+      "topics": [
+        "glossary",
+        "efficiency",
+        "pace"
+      ],
+      "relevance": "supporting",
+      "why": "Formula-level definitions (TS%, eFG%, ORtg, pace) for cross-checking our metrics.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "price_wolfers2010",
+      "type": "paper",
+      "title": "Racial Discrimination Among NBA Referees",
+      "authors": [
+        "Joseph Price",
+        "Justin Wolfers"
+      ],
+      "year": 2010,
+      "venue": "NBER Working Paper 13206",
+      "url": "https://www.nber.org/papers/w13206",
+      "pdf_url": null,
+      "access": "open_access",
+      "license": "NBER working paper; check terms",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.officiating"
+      ],
+      "topics": [
+        "officiating",
+        "bias",
+        "fouls",
+        "econometrics"
+      ],
+      "relevance": "core",
+      "why": "The canonical officiating-bias study; defines the identification problem any referee-analytics product must confront.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "gilovich1985",
+      "type": "paper",
+      "title": "The Hot Hand in Basketball: On the Misperception of Random Sequences",
+      "authors": [
+        "Thomas Gilovich",
+        "Robert Vallone",
+        "Amos Tversky"
+      ],
+      "year": 1985,
+      "venue": "Cognitive Psychology",
+      "url": "https://doi.org/10.1016/0010-0285(85)90004-0",
+      "pdf_url": null,
+      "access": "publisher",
+      "license": "Publisher copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [
+        "hot hand",
+        "streaks",
+        "statistics",
+        "bias"
+      ],
+      "relevance": "core",
+      "why": "The base rate for streak claims. Any 'momentum' or 'hot hand' feature must beat this null.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      },
+      "doi": "10.1016/0010-0285(85)90004-0"
+    },
+    {
+      "key": "ssac",
+      "type": "web",
+      "title": "MIT Sloan Sports Analytics Conference — research archive",
+      "authors": [
+        "MIT Sloan"
+      ],
+      "year": 2026,
+      "venue": "MIT Sloan",
+      "url": "https://www.sloansportsconference.com/",
+      "pdf_url": null,
+      "access": "official_web",
+      "license": "Conference terms; papers vary",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "measurement.evaluation"
+      ],
+      "topics": [
+        "sports analytics",
+        "conference",
+        "tracking"
+      ],
+      "relevance": "core",
+      "why": "The main applied-sports analytics venue; scan yearly for basketball tracking and valuation work.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "cleaningtheglass",
+      "type": "web",
+      "title": "Cleaning the Glass",
+      "authors": [
+        "Ben Falk"
+      ],
+      "year": 2026,
+      "venue": "Cleaning the Glass",
+      "url": "https://cleaningtheglass.com/",
+      "pdf_url": null,
+      "access": "subscription",
+      "license": "Subscription terms",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [
+        "lineups",
+        "shot profiles",
+        "analysis"
+      ],
+      "relevance": "supporting",
+      "why": "Lineup and shot-profile analysis with public methodology notes; a model for coach-facing reports.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "usab",
+      "type": "web",
+      "title": "USA Basketball — coaching resources",
+      "authors": [
+        "USA Basketball"
+      ],
+      "year": 2026,
+      "venue": "USA Basketball",
+      "url": "https://www.usab.com/",
+      "pdf_url": null,
+      "access": "official_web",
+      "license": "USA Basketball terms; reference use",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.tactics",
+        "basketball.ontology"
+      ],
+      "topics": [
+        "coaching",
+        "drills",
+        "terminology"
+      ],
+      "relevance": "supporting",
+      "why": "USA Basketball's coaching library; useful for canonical drill and terminology naming.",
+      "repo": [],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "fiba_documents",
+      "type": "web",
+      "title": "FIBA Resource Hub — rules and interpretations",
+      "authors": [
+        "FIBA"
+      ],
+      "year": 2026,
+      "venue": "FIBA",
+      "url": "https://www.fiba.basketball/documents",
+      "pdf_url": null,
+      "access": "official_web",
+      "license": "FIBA copyright; free download",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.rules",
+        "basketball.officiating"
+      ],
+      "topics": [
+        "rules",
+        "interpretations",
+        "officiating"
+      ],
+      "relevance": "core",
+      "why": "Official interpretations and rule-change documents; needed to encode edge cases correctly.",
+      "repo": [
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "arxiv-2103.13630",
+      "type": "paper",
+      "title": "A Survey of Quantization Methods for Efficient Neural Network Inference",
+      "authors": [
+        "Amir Gholami",
+        "Sehoon Kim",
+        "Zhen Dong",
+        "Zhewei Yao",
+        "Michael W. Mahoney",
+        "Kurt Keutzer"
+      ],
+      "year": 2021,
+      "venue": "arXiv",
+      "arxiv_id": "2103.13630",
+      "doi": "10.48550/arxiv.2103.13630",
+      "url": "https://arxiv.org/abs/2103.13630",
+      "pdf_url": "https://arxiv.org/pdf/2103.13630",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "systems.runtime"
+      ],
+      "topics": [
+        "quantization",
+        "INT8",
+        "efficient inference",
+        "edge"
+      ],
+      "relevance": "core",
+      "why": "The TensorRT/INT8 plan needs a method map: what quantization costs in accuracy, and where the calibration data comes from.",
+      "repo": [
+        "models/",
+        "inference/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "arxiv-1801.04381",
+      "type": "paper",
+      "title": "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
+      "authors": [
+        "Mark Sandler",
+        "Andrew Howard",
+        "Menglong Zhu",
+        "Andrey Zhmoginov",
+        "Liang-Chieh Chen"
+      ],
+      "year": 2018,
+      "venue": "arXiv",
+      "arxiv_id": "1801.04381",
+      "doi": "10.1109/cvpr.2018.00474",
+      "url": "https://arxiv.org/abs/1801.04381",
+      "pdf_url": "https://arxiv.org/pdf/1801.04381",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "systems.runtime",
+        "ml.foundations"
+      ],
+      "topics": [
+        "MobileNet",
+        "efficient CNN",
+        "edge"
+      ],
+      "relevance": "supporting",
+      "why": "Depthwise-separable backbone for edge inference; a candidate if the pipeline must run on a courtside device.",
+      "repo": [
+        "models/",
+        "inference/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "nba-stats-api",
+      "type": "web",
+      "title": "NBA Stats API (stats.nba.com)",
+      "authors": [
+        "NBA"
+      ],
+      "year": 2026,
+      "venue": "NBA.com",
+      "url": "https://www.nba.com/stats/",
+      "access": "official_web",
+      "license": "NBA.com terms of use; endpoints are unofficial and may change",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "perception.events"
+      ],
+      "topics": [
+        "play-by-play",
+        "shot chart",
+        "synergy play types",
+        "tracking"
+      ],
+      "relevance": "core",
+      "why": "Shot coordinates since 1996, play-by-play, Synergy play types, and tracking aggregates; the fastest way to bootstrap xPTS and play recognition without video labels.",
+      "repo": [
+        "analytics/",
+        "data/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "nba-api-python",
+      "type": "web",
+      "title": "nba_api: Python client for NBA.com stats",
+      "authors": [
+        "nba_api contributors"
+      ],
+      "year": 2026,
+      "venue": "GitHub",
+      "url": "https://github.com/swar/nba_api",
+      "access": "open_access",
+      "license": "MIT",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "systems.runtime"
+      ],
+      "topics": [
+        "NBA Stats API",
+        "play-by-play",
+        "shot chart",
+        "Python"
+      ],
+      "relevance": "supporting",
+      "why": "MIT-licensed Python client for stats.nba.com; the practical ingest path for play-by-play and shot charts.",
+      "repo": [
+        "analytics/",
+        "scripts/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "sportsdataverse",
+      "type": "web",
+      "title": "SportsDataverse: NBA play-by-play and box-score tooling",
+      "authors": [
+        "SportsDataverse contributors"
+      ],
+      "year": 2026,
+      "venue": "sportsdataverse.org",
+      "url": "https://sportsdataverse-py.sportsdataverse.org/",
+      "access": "open_access",
+      "license": "MIT (Python package; other packages vary)",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "systems.runtime"
+      ],
+      "topics": [
+        "play-by-play",
+        "box scores",
+        "rosters",
+        "Python"
+      ],
+      "relevance": "supporting",
+      "why": "Tidy play-by-play, box scores, and rosters across leagues; a second ingest path when the raw NBA API changes.",
+      "repo": [
+        "analytics/",
+        "scripts/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "sportvu-movement-data",
+      "type": "dataset",
+      "title": "NBA SportVU movement data (2015-16)",
+      "authors": [
+        "NBA SportVU",
+        "sealneaward"
+      ],
+      "year": 2016,
+      "venue": "GitHub",
+      "url": "https://github.com/sealneaward/nba-movement-data",
+      "access": "open_access",
+      "license": "MIT (repository); underlying NBA data terms may apply",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.tracking",
+        "basketball.analytics"
+      ],
+      "topics": [
+        "tracking",
+        "XY coordinates",
+        "25 Hz",
+        "EPV"
+      ],
+      "relevance": "core",
+      "why": "The only public full-season player/ball tracking set; use it to prototype EPV, matchup assignment, and tracking metrics before we have our own tracking.",
+      "repo": [
+        "analytics/",
+        "tracking/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "pl-nba",
+      "type": "dataset",
+      "title": "PL-NBA: Possession-level NBA video dataset",
+      "authors": [
+        "PL-NBA contributors"
+      ],
+      "year": 2026,
+      "venue": "GitHub / arXiv",
+      "url": "https://github.com/holhouse/PL-NBA-Dataset",
+      "access": "dataset_page",
+      "license": "Research use; check the repository",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.events",
+        "basketball.ontology"
+      ],
+      "topics": [
+        "possession",
+        "events",
+        "captions",
+        "NBA"
+      ],
+      "relevance": "core",
+      "why": "Possession-level NBA clips and 30k+ event annotations; the closest public match to the Hudl possession workflow and the best event taxonomy cross-check.",
+      "repo": [
+        "events/",
+        "data/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "arxiv-2208.04897",
+      "type": "paper",
+      "title": "Sports Video Analysis on Large-Scale Data",
+      "authors": [
+        "Dekun Wu",
+        "He Zhao",
+        "Xingce Bao",
+        "Richard P. Wildes"
+      ],
+      "year": 2022,
+      "venue": "arXiv",
+      "arxiv_id": "2208.04897",
+      "doi": "10.48550/arxiv.2208.04897",
+      "url": "https://arxiv.org/abs/2208.04897",
+      "pdf_url": "https://arxiv.org/pdf/2208.04897",
+      "access": "open_access",
+      "license": "arXiv license (per paper; check the PDF)",
+      "peer_reviewed": false,
+      "tracks": [
+        "perception.events",
+        "measurement.evaluation"
+      ],
+      "topics": [
+        "NSVA",
+        "NBA dataset",
+        "action recognition",
+        "large-scale video"
+      ],
+      "relevance": "supporting",
+      "why": "NSVA is a 32k-clip NBA video dataset; a candidate benchmark for broadcast action/event recognition when our own labels are thin.",
+      "repo": [
+        "eval/",
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "openalex+arxiv-id"
+      }
+    },
+    {
+      "key": "synergy-sportradar",
+      "type": "web",
+      "title": "Synergy Basketball API (Sportradar)",
+      "authors": [
+        "Sportradar"
+      ],
+      "year": 2026,
+      "venue": "Sportradar Developer",
+      "url": "https://developer.sportradar.com/basketball/reference/synergy-basketball-overview",
+      "access": "subscription",
+      "license": "Commercial API terms",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics",
+        "perception.events"
+      ],
+      "topics": [
+        "play types",
+        "shot coordinates",
+        "commercial API"
+      ],
+      "relevance": "supporting",
+      "why": "Commercial ground truth for play types and shot coordinates; a benchmark for our own recognition, not a data source we can ship without a license.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "bigdataball",
+      "type": "web",
+      "title": "BigDataBall: historical NBA play-by-play and box scores",
+      "authors": [
+        "BigDataBall"
+      ],
+      "year": 2026,
+      "venue": "BigDataBall",
+      "url": "https://www.bigdataball.com/datasets/nba-data/",
+      "access": "subscription",
+      "license": "Commercial terms",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [
+        "play-by-play",
+        "box scores",
+        "historical"
+      ],
+      "relevance": "supporting",
+      "why": "Paid historical play-by-play and box scores; a fallback if the public NBA API is unstable or rate-limited.",
+      "repo": [
+        "analytics/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "basketball-reference",
+      "type": "web",
+      "title": "Basketball-Reference",
+      "authors": [
+        "Sports Reference"
+      ],
+      "year": 2026,
+      "venue": "Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/",
+      "access": "official_web",
+      "license": "Sports Reference terms; scraping restrictions",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.analytics"
+      ],
+      "topics": [
+        "play-by-play",
+        "lineups",
+        "box scores",
+        "reference"
+      ],
+      "relevance": "supporting",
+      "why": "Play-by-play, lineups, and box scores for cross-checking; not a high-frequency API, but a reliable reconciliation source.",
+      "repo": [
+        "analytics/",
+        "eval/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "http-head"
+      }
+    },
+    {
+      "key": "winter-triple-post-offense",
+      "type": "book",
+      "title": "The Triple-Post Offense (Sideline Triangle)",
+      "authors": [
+        "Fred 'Tex' Winter"
+      ],
+      "year": 1962,
+      "venue": "Self-published",
+      "access": "purchase",
+      "license": "Publisher/author copyright",
+      "peer_reviewed": false,
+      "tracks": [
+        "basketball.strategy"
+      ],
+      "topics": [
+        "triangle offense",
+        "spacing",
+        "reads",
+        "counters",
+        "playbook"
+      ],
+      "relevance": "core",
+      "why": "Primary source for the triangle's spacing, reads, and counters; the case study for representing a system as a playbook graph rather than a list of set plays.",
+      "repo": [
+        "analytics/",
+        "events/"
+      ],
+      "verified": {
+        "date": "2026-10-21",
+        "method": "citation"
+      }
+    }
+  ]
+}

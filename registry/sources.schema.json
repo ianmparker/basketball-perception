@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ianmparker/basketball-perception/registry/sources.schema.json",
+  "title": "Source Registry",
+  "type": "object",
+  "required": ["version", "sources"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": [
+        "asset_id", "name", "source_url", "source_platform",
+        "status", "takedown_status"
+      ],
+      "properties": {
+        "asset_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "name": { "type": "string" },
+        "source_url": { "type": "string", "format": "uri" },
+        "source_platform": { "type": "string" },
+        "contents": { "type": "string" },
+        "size": { "type": "string" },
+        "license_id": { "type": "string" },
+        "license_url": { "type": "string" },
+        "provenance_confidence": {
+          "enum": ["verified", "self-asserted", "unknown", "likely-infringing"]
+        },
+        "commercial_use_allowed": { "type": ["boolean", "null"] },
+        "modification_allowed": { "type": ["boolean", "null"] },
+        "redistribution_allowed": { "type": ["boolean", "null"] },
+        "ml_training_allowed": { "type": ["boolean", "null"] },
+        "attribution_text": { "type": "string" },
+        "retrieval_method": { "type": "string" },
+        "retrieval_date": { "type": ["string", "null"] },
+        "risk_tier": {
+          "enum": ["SAFE", "CAUTION", "RESEARCH-ONLY", "DO-NOT-USE"]
+        },
+        "relevance": { "enum": ["high", "medium", "low"] },
+        "notes": { "type": "string" },
+        "status": {
+          "enum": ["staged", "under-review", "approved", "rejected", "removed"]
+        },
+        "approved_by": { "type": ["string", "null"] },
+        "approved_date": { "type": ["string", "null"] },
+        "takedown_status": { "enum": ["active", "pending", "removed"] }
+      }
+    }
+  }
+}

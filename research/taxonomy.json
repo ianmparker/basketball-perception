@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "updated": "2026-10-21",
+  "purpose": "Stable topic IDs shared by the bibliography, knowledge notes, and experiment backlog. Add a track only when it owns a recurring question and at least one note.",
+  "layers": [
+    {
+      "id": "perception",
+      "name": "Perception",
+      "question": "What is happening in the pixels?"
+    },
+    {
+      "id": "basketball",
+      "name": "Basketball",
+      "question": "What does it mean in the game?"
+    },
+    {
+      "id": "measurement",
+      "name": "Measurement",
+      "question": "How do we know we are right?"
+    },
+    {
+      "id": "ml",
+      "name": "Machine learning",
+      "question": "What can be learned, and how?"
+    },
+    {
+      "id": "systems",
+      "name": "Systems",
+      "question": "Can it run reliably and affordably?"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "perception.calibration",
+      "layer": "perception",
+      "name": "Camera calibration and court registration",
+      "question": "Where is the camera, and how do pixels map to court coordinates?",
+      "owner": "perception-researcher"
+    },
+    {
+      "id": "perception.detection",
+      "layer": "perception",
+      "name": "Object detection",
+      "question": "Where are the ball, players, referees, rim, and court features?",
+      "owner": "perception-researcher"
+    },
+    {
+      "id": "perception.tracking",
+      "layer": "perception",
+      "name": "Multi-object tracking and re-identification",
+      "question": "Which detection in this frame is the same entity as last frame?",
+      "owner": "perception-researcher"
+    },
+    {
+      "id": "perception.pose",
+      "layer": "perception",
+      "name": "Pose and action recognition",
+      "question": "What is each player's body doing, and which action is it?",
+      "owner": "perception-researcher"
+    },
+    {
+      "id": "perception.events",
+      "layer": "perception",
+      "name": "Event spotting and temporal localization",
+      "question": "When did the shot, pass, screen, foul, or rebound happen?",
+      "owner": "perception-researcher"
+    },
+    {
+      "id": "perception.representation",
+      "layer": "perception",
+      "name": "Representation learning and foundation models",
+      "question": "What pretrained features transfer to basketball broadcast and gym footage?",
+      "owner": "perception-researcher"
+    },
+    {
+      "id": "basketball.rules",
+      "layer": "basketball",
+      "name": "Rules and officiating",
+      "question": "What is legal, what is a violation or foul, and how do NBA, FIBA, and NCAA differ?",
+      "owner": "basketball-domain-expert"
+    },
+    {
+      "id": "basketball.ontology",
+      "layer": "basketball",
+      "name": "Terminology and event ontology",
+      "question": "What are the canonical names, definitions, and parent-child relations for basketball concepts?",
+      "owner": "basketball-domain-expert"
+    },
+    {
+      "id": "basketball.tactics",
+      "layer": "basketball",
+      "name": "Tactics, spacing, and coverage",
+      "question": "What is the team trying to do, and how is the defense stopping it?",
+      "owner": "basketball-domain-expert"
+    },
+    {
+      "id": "basketball.strategy",
+      "layer": "basketball",
+      "name": "Strategy, playbooks, and play recognition",
+      "question": "What system is this team running, what are its reads, and what counters it?",
+      "owner": "basketball-domain-expert"
+    },
+    {
+      "id": "basketball.analytics",
+      "layer": "basketball",
+      "name": "Basketball analytics and player valuation",
+      "question": "How valuable was that action, lineup, or player?",
+      "owner": "basketball-domain-expert"
+    },
+    {
+      "id": "basketball.officiating",
+      "layer": "basketball",
+      "name": "Officiating science and referee decision support",
+      "question": "Which calls are objectively checkable, and where does bias enter?",
+      "owner": "basketball-domain-expert"
+    },
+    {
+      "id": "measurement.evaluation",
+      "layer": "measurement",
+      "name": "Evaluation metrics and scorecards",
+      "question": "Which metric, at which tolerance, on which grouped split, with what uncertainty?",
+      "owner": "eval-engineer"
+    },
+    {
+      "id": "measurement.experiment",
+      "layer": "measurement",
+      "name": "Experiment design and statistics",
+      "question": "Is the observed difference real, and did the test leak?",
+      "owner": "eval-engineer"
+    },
+    {
+      "id": "ml.foundations",
+      "layer": "ml",
+      "name": "Machine learning foundations",
+      "question": "Which architecture, loss, and optimization choices are defensible?",
+      "owner": "perception-researcher"
+    },
+    {
+      "id": "systems.runtime",
+      "layer": "systems",
+      "name": "Runtime, data platform, and deployment",
+      "question": "Can we process a game fast enough, cheaply enough, and reproducibly?",
+      "owner": "infra-engineer"
+    }
+  ]
+}

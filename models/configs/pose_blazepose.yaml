@@ -1,0 +1,3 @@
+# placeholder config
+model: blazepose
+input_size: 256

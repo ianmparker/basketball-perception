@@ -1,0 +1,26 @@
+{
+  "video_path": "data/raw/wikimedia-basketball-safe/2026-10-20/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s002.ogv",
+  "fps": 30.0,
+  "total_frames": 121,
+  "game_id": "erculj_shot_types_demos",
+  "footage_type": "practice_gym",
+  "annotator": "frame_review_contact_sheet",
+  "annotation_date": "2026-10-19",
+  "notes": "Demonstration clip s002: hook shot (two-legged). Shot release labeled at the frame the ball leaves the shooter's hands (f85). Outcome not visible in frame; recorded as unknown.",
+  "shots": [
+    {
+      "frame_idx": 85,
+      "track_id": 1,
+      "shot_type": "other",
+      "outcome": "unknown"
+    }
+  ],
+  "passes": [],
+  "screens": [],
+  "pnrs": [],
+  "blocks": [],
+  "rebounds": [],
+  "dunks": [],
+  "team_assignments": [],
+  "tracking_checks": []
+}

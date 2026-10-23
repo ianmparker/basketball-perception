@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "updated": "2026-10-21",
+  "purpose": "Operational vocabulary for play recognition. These are observable heuristics for tracking/video, not rulebook terms. IDs are stable; add a new ID rather than changing the meaning of an old one.",
+  "source_note": "knowledge/basketball/06-strategy-and-playbooks.md",
+  "play_types": [
+    {
+      "id": "isolation",
+      "name": "Isolation",
+      "definition": "One ball handler attacks a set defender while four teammates stay spaced; no screen creates the advantage.",
+      "signals": [
+        "one defender within 6 ft of the handler",
+        "four teammates outside 12 ft of the handler",
+        "no on-ball screen in the 1.5 s before the drive"
+      ],
+      "synergy": "Isolation",
+      "synonyms": ["iso"]
+    },
+    {
+      "id": "transition",
+      "name": "Transition",
+      "definition": "The offense attacks before the defense is set, usually within 6 s of a possession change.",
+      "signals": [
+        "possession change within the last 6 s",
+        "defenders retreating or unmatched",
+        "ball advanced past half court before the defense is set"
+      ],
+      "synergy": "Transition",
+      "synonyms": ["fast break", "early offense"]
+    },
+    {
+      "id": "pnr_ball_handler",
+      "name": "Pick-and-roll — ball handler",
+      "definition": "An on-ball screen is set and the handler uses it to create a drive, pass, or shot.",
+      "signals": [
+        "screener stationary next to the handler's defender",
+        "handler dribbles toward or away from the screen",
+        "handler decision within 2 s of the screen"
+      ],
+      "synergy": "PRBallHandler",
+      "synonyms": ["PnR handler", "ball-screen handler"]
+    },
+    {
+      "id": "pnr_roll_man",
+      "name": "Pick-and-roll — roll man",
+      "definition": "The screener dives to the rim or pops to the perimeter and becomes the receiver or finisher.",
+      "signals": [
+        "screener moves toward the rim or pops after contact",
+        "screener receives the ball or creates a shot",
+        "handler and screener remain within a passing lane"
+      ],
+      "synergy": "PRRollMan",
+      "synonyms": ["roller", "popper"]
+    },
+    {
+      "id": "post_up",
+      "name": "Post-up",
+      "definition": "A player catches with their back to the basket inside roughly 12 ft and attacks from the post.",
+      "signals": [
+        "catch inside 12 ft with back to basket",
+        "defender positioned behind the receiver",
+        "dribble or pivot toward the rim"
+      ],
+      "synergy": "Postup",
+      "synonyms": ["post", "block"]
+    },
+    {
+      "id": "spot_up",
+      "name": "Spot-up",
+      "definition": "A stationary catch outside roughly 15 ft, followed by a shot or a closeout attack.",
+      "signals": [
+        "catch with feet set outside 15 ft",
+        "defender closing out from distance",
+        "immediate shot or one-dribble attack"
+      ],
+      "synergy": "Spotup",
+      "synonyms": ["catch-and-shoot", "spot shot"]
+    },
+    {
+      "id": "handoff",
+      "name": "Dribble handoff",
+      "definition": "A ball handler hands the ball to a teammate in motion, often used as a screen-like action.",
+      "signals": [
+        "two players converge",
+        "ball transfers hand-to-hand near the handler",
+        "receiver continues into a drive or shot"
+      ],
+      "synergy": "Handoff",
+      "synonyms": ["DHO"]
+    },
+    {
+      "id": "cut",
+      "name": "Cut",
+      "definition": "An off-ball player moves toward the rim or open space to receive a pass.",
+      "signals": [
+        "off-ball player accelerates toward the rim or gap",
+        "defender trailing or losing the player",
+        "pass arrives within 1 s of the move"
+      ],
+      "synergy": "Cut",
+      "synonyms": ["backdoor", "basket cut", "flash"]
+    },
+    {
+      "id": "off_screen",
+      "name": "Off-ball screen",
+      "definition": "A player runs off a screen away from the ball to get open.",
+      "signals": [
+        "stationary screener away from the ball",
+        "cutter changes direction around the screen",
+        "defender impeded or trailing"
+      ],
+      "synergy": "OffScreen",
+      "synonyms": ["off-ball screen", "pin-down", "flare"]
+    },
+    {
+      "id": "putback",
+      "name": "Putback",
+      "definition": "An offensive rebound is immediately followed by a shot attempt.",
+      "signals": [
+        "shot miss and offensive rebound",
+        "shot attempt within 1.5 s of the rebound",
+        "player near the rim"
+      ],
+      "synergy": "OffRebound",
+      "synonyms": ["second-chance shot", "tip-in"]
+    },
+    {
+      "id": "miscellaneous",
+      "name": "Miscellaneous",
+      "definition": "A possession that does not fit the other play types; broken plays are a real category.",
+      "signals": [
+        "no play type passes its confidence threshold",
+        "loose ball, deflection, or broken action"
+      ],
+      "synergy": "Misc",
+      "synonyms": ["broken play", "other"]
+    }
+  ],
+  "coverages": [
+    {
+      "id": "man",
+      "name": "Man-to-man",
+      "definition": "Each defender is primarily responsible for one offensive player.",
+      "signals": ["stable nearest-defender assignments", "tight assignment stability across the possession"]
+    },
+    {
+      "id": "drop",
+      "name": "Drop coverage",
+      "definition": "The screener's defender stays below the screen level, between the roller and the rim.",
+      "signals": ["screener's defender below the screen", "roller covered from behind", "handler given a pull-up"]
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "definition": "Two defenders exchange assignments after a screen.",
+      "signals": ["assignment swap after contact", "new defender on the handler", "mismatch persists"]
+    },
+    {
+      "id": "hedge",
+      "name": "Hedge / show",
+      "definition": "The screener's defender jumps above the screen level to slow the handler, then recovers.",
+      "signals": ["screener's defender above screen level", "brief double-team", "recovery to the roller"]
+    },
+    {
+      "id": "ice",
+      "name": "Ice / down",
+      "definition": "The handler's defender forces the ball toward the baseline while the screener's defender stays high.",
+      "signals": ["handler forced to the baseline side", "screener's defender above the screen", "help rotates from the weak side"]
+    },
+    {
+      "id": "trap",
+      "name": "Trap / blitz",
+      "definition": "Two defenders aggressively double the ball handler.",
+      "signals": ["two defenders within 6 ft of the handler", "handler picked up", "short roll or skip pass available"]
+    },
+    {
+      "id": "zone_2_3",
+      "name": "2-3 zone",
+      "definition": "Two defenders high and three low, guarding space rather than specific players.",
+      "signals": ["two high defenders", "three low defenders", "no stable man assignments"]
+    },
+    {
+      "id": "zone_3_2",
+      "name": "3-2 zone",
+      "definition": "Three defenders high and two low.",
+      "signals": ["three high defenders", "two low defenders", "no stable man assignments"]
+    },
+    {
+      "id": "zone_1_3_1",
+      "name": "1-3-1 zone",
+      "definition": "One point defender, three across the wing area, one on the baseline.",
+      "signals": ["one point defender", "three wing defenders", "one baseline defender"]
+    },
+    {
+      "id": "press",
+      "name": "Full-court press",
+      "definition": "The defense picks up above half court, often after a made basket or inbound.",
+      "signals": ["defenders above half court at inbound", "denial of the first pass", "trap near the sideline"]
+    }
+  ],
+  "play_families": [
+    {
+      "id": "horns",
+      "name": "Horns",
+      "definition": "Two bigs at the elbows with guards in the corners; a base for PnR, handoff, and pinch actions.",
+      "signals": ["two players at the elbows", "two corner players", "handler at the top"]
+    },
+    {
+      "id": "spain_pnr",
+      "name": "Spain PnR",
+      "definition": "A back screen for the screener precedes the ball screen, creating a second defender decision.",
+      "signals": ["back screen before the ball screen", "screener slips or re-screens", "handler rejects or uses the screen"]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "definition": "A dribble handoff into a ball-screen-like action, often with a re-screen.",
+      "signals": ["DHO entry", "receiver immediately uses a screen", "defense forced into a second decision"]
+    },
+    {
+      "id": "floppy",
+      "name": "Floppy",
+      "definition": "A shooter chooses between two off-ball screens on opposite sides.",
+      "signals": ["two screeners set for one shooter", "shooter reads the defender", "curl or fade"]
+    },
+    {
+      "id": "elevator",
+      "name": "Elevator",
+      "definition": "Two players form a gate and close it behind a shooter cutting through.",
+      "signals": ["two players facing each other", "shooter cuts between them", "gate closes"]
+    },
+    {
+      "id": "stagger",
+      "name": "Stagger",
+      "definition": "Two sequential screens for the same cutter.",
+      "signals": ["two screens in sequence", "cutter uses the second screen", "defender fights through both"]
+    },
+    {
+      "id": "triangle",
+      "name": "Triangle",
+      "definition": "Sideline triangle with a weak-side two-man game; a read-and-react system rather than a set play.",
+      "signals": ["corner-wing-post triangle", "weak-side two-man action", "read-based cuts and post entries"]
+    }
+  ],
+  "notes": [
+    "Play types follow the NBA/Synergy vocabulary; coverage and family labels are orthogonal.",
+    "A possession can have multiple labels; do not force a single class.",
+    "Definitions are heuristics for tracking/video, not official rulebook terms."
+  ]
+}

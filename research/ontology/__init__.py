@@ -1,0 +1,1 @@
+"""Play taxonomy contract."""

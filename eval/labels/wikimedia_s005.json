@@ -1,0 +1,32 @@
+{
+  "video_path": "data/raw/wikimedia-basketball-safe/2026-10-20/Basketball-Shot-Types-and-Shot-Success-in-Different-Levels-of-Competitive-Basketball-pone.0128885.s005.ogv",
+  "fps": 30.0,
+  "total_frames": 78,
+  "game_id": "erculj_shot_types_demos",
+  "footage_type": "practice_gym",
+  "annotator": "frame_review_contact_sheet",
+  "annotation_date": "2026-10-19",
+  "notes": "Demonstration clip s005: dunk (two-legged). Shot release labeled at f48; rim contact at about f51. Outcome not visible in frame; recorded as unknown.",
+  "shots": [
+    {
+      "frame_idx": 48,
+      "track_id": 1,
+      "shot_type": "dunk",
+      "outcome": "unknown"
+    }
+  ],
+  "passes": [],
+  "screens": [],
+  "pnrs": [],
+  "blocks": [],
+  "rebounds": [],
+  "dunks": [
+    {
+      "frame_idx": 51,
+      "player_id": 1,
+      "team_id": null
+    }
+  ],
+  "team_assignments": [],
+  "tracking_checks": []
+}

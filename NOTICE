@@ -1,0 +1,51 @@
+AI Basketball Coach — Broadcast Perception Pipeline
+Copyright (C) 2026 Ian Parker
+
+This program is free software: you can redistribute it and/or modify it under the
+terms of the GNU Affero General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with
+this program. If not, see <https://www.gnu.org/licenses/>.
+
+Third-party components and attributions
+---------------------------------------
+
+- Ultralytics YOLO / YOLOv8 (AGPL-3.0)
+  https://github.com/ultralytics/ultralytics
+  Used for object detection, pose estimation, and court-keypoint inference.
+
+- BoxMOT (AGPL-3.0)
+  https://github.com/mikel-brostrom/boxmot
+  Used for BoT-SORT / ByteTrack tracker implementations and ReID support.
+
+- ByteTrack (MIT)
+  https://github.com/ifzhang/ByteTrack
+  Tracking algorithm and reference implementation.
+
+- abdullahtarek/basketball_analysis (MIT)
+  https://github.com/abdullahtarek/basketball_analysis
+  `analytics/team_assigner.py` was originally ported from this project.
+
+- MediaPipe (Apache-2.0)
+  https://github.com/google-ai-edge/mediapipe
+  Optional pose-landmarker model. The model weights are not distributed here.
+
+- OpenCLIP (MIT), timm (Apache-2.0), Transformers (Apache-2.0)
+  Optional team-classification backbones. Weights are downloaded at runtime.
+
+Data and model weights
+----------------------
+
+No broadcast video, extracted frames, or trained task-specific weights are
+distributed with this repository. Datasets referenced in documentation retain their
+original licenses. Scorecards in `eval/` are aggregate measurements; labels for
+Wikimedia Commons footage are included, labels derived from research-only broadcast
+footage are not.
+
+If you believe content in this repository infringes your rights, contact the
+maintainer at ianmparker@outlook.com.

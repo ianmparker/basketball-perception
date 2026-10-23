@@ -1,0 +1,74 @@
+{
+  "source_asset_id": "wikimedia-basketball-safe",
+  "purpose": "ball detection footage: CC0 game play, streetball, free-throw close-up",
+  "generated_at": "2026-10-20T18:36:36+00:00",
+  "allow_share_alike": false,
+  "files": [
+    {
+      "filename": "Ain_Star_Game_2019_-_ASVEL_-_lan_sportif_chalonnais_-_4.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ain_Star_Game_2019_-_ASVEL_-_%C3%89lan_sportif_chalonnais_-_4.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ain_Star_Game_2019_-_ASVEL_-_%C3%89lan_sportif_chalonnais_-_4.webm",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Benoît Prieur",
+      "description": "Ain Star Game 2019 - ASVEL - Élan sportif chalonnais, échauffement.",
+      "size_mb": 15.0,
+      "mime": "video/webm"
+    },
+    {
+      "filename": "Ain_Star_Game_2019_-_ASVEL_-_lan_sportif_chalonnais_-_5.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Ain_Star_Game_2019_-_ASVEL_-_%C3%89lan_sportif_chalonnais_-_5.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ain_Star_Game_2019_-_ASVEL_-_%C3%89lan_sportif_chalonnais_-_5.webm",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Benoît Prieur",
+      "description": "Ain Star Game 2019 - ASVEL - Élan sportif chalonnais, échauffement.",
+      "size_mb": 20.69,
+      "mime": "video/webm"
+    },
+    {
+      "filename": "Ain_Star_Game_2019_-_ASVEL_-_lan_sportif_chalonnais_-_1.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Ain_Star_Game_2019_-_ASVEL_-_%C3%89lan_sportif_chalonnais_-_1.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ain_Star_Game_2019_-_ASVEL_-_%C3%89lan_sportif_chalonnais_-_1.webm",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Benoît Prieur",
+      "description": "Ain Star Game 2019 - ASVEL - Élan sportif chalonnais, échauffement.",
+      "size_mb": 25.54,
+      "mime": "video/webm"
+    },
+    {
+      "filename": "Streetball_in_Moscow_Bolshoy_Spasoglinishchevsky_lane.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Streetball_in_Moscow_Bolshoy_Spasoglinishchevsky_lane.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Streetball_in_Moscow_Bolshoy_Spasoglinishchevsky_lane.webm",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Predatorsamsung",
+      "description": "Streetball in Moscow Bolshoy Spasoglinishchevsky lane",
+      "size_mb": 2.21,
+      "mime": "video/webm"
+    },
+    {
+      "filename": "Streetball_in_Moscow_Bolshoy_Spasoglinishchevsky_lane2.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Streetball_in_Moscow_Bolshoy_Spasoglinishchevsky_lane2.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Streetball_in_Moscow_Bolshoy_Spasoglinishchevsky_lane2.webm",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "Predatorsamsung",
+      "description": "Streetball in Moscow Bolshoy Spasoglinishchevsky lane2",
+      "size_mb": 3.96,
+      "mime": "video/webm"
+    },
+    {
+      "filename": "20240301_Jackson_McAndrew_free_throw_video_01.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/20240301_Jackson_McAndrew_free_throw_video_01.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "page_url": "https://commons.wikimedia.org/wiki/File:20240301_Jackson_McAndrew_free_throw_video_01.webm",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "artist": "TonyTheTiger",
+      "description": "w:Jackson McAndrew of w:Wayzata High School shoots a free throw for Wayzata against Minnetonka on March 1, 2024. He is a w:2024-25 Creighton Bluejays men's basketball team recruit.",
+      "size_mb": 2.94,
+      "mime": "video/webm"
+    }
+  ]
+}

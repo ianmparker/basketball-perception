@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ianmparker/basketball-perception/research/bibliography/schema.json",
+  "title": "Research Library Entry",
+  "description": "One paper, book, standard, dataset page, or web reference used by the research department. Access and license are recorded even when the item is paywalled; only open-access items may be downloaded.",
+  "type": "object",
+  "required": ["version", "updated", "entries"],
+  "properties": {
+    "version": {"type": "integer", "minimum": 1},
+    "updated": {"type": "string", "format": "date"},
+    "entries": {"type": "array", "items": {"$ref": "#/$defs/entry"}}
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "type", "title", "authors", "year", "access", "tracks", "relevance", "why", "verified"],
+      "properties": {
+        "key": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "type": {"enum": ["paper", "book", "standard", "dataset", "web"]},
+        "title": {"type": "string", "minLength": 3},
+        "authors": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+        "year": {"type": "integer", "minimum": 1900, "maximum": 2100},
+        "venue": {"type": "string"},
+        "edition": {"type": "string"},
+        "publisher": {"type": "string"},
+        "isbn": {"type": "string"},
+        "arxiv_id": {"type": "string", "pattern": "^[0-9]{4}\\.[0-9]{4,5}$"},
+        "doi": {"type": ["string", "null"]},
+        "url": {"type": ["string", "null"], "format": "uri"},
+        "pdf_url": {"type": ["string", "null"], "format": "uri"},
+        "access": {
+          "enum": ["open_access", "preprint", "publisher", "purchase", "subscription", "official_web", "dataset_page"],
+          "description": "open_access/preprint may be downloaded; publisher/purchase/subscription are citation-only."
+        },
+        "license": {"type": "string"},
+        "peer_reviewed": {"type": "boolean"},
+        "tracks": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+        "topics": {"type": "array", "items": {"type": "string"}},
+        "relevance": {"enum": ["core", "supporting", "background"]},
+        "why": {"type": "string", "minLength": 20, "description": "One sentence: what this changes for this repo."},
+        "repo": {"type": "array", "items": {"type": "string"}},
+        "verified": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["date", "method"],
+          "properties": {
+            "date": {"type": "string", "format": "date"},
+            "method": {"enum": ["arxiv-api", "openalex+arxiv-id", "http-head", "citation", "manual"]}
+          }
+        }
+      }
+    }
+  }
+}

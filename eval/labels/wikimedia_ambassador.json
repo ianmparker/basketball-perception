@@ -1,0 +1,31 @@
+{
+  "video_path": "data/raw/wikimedia-basketball-safe/2026-10-20/Ambassador_Nicholas_Burns_plays_basketball_with_Chinese_students_in_Zhijiang_Dong_Autonomous_County.webm",
+  "fps": 60.0,
+  "total_frames": 362,
+  "game_id": "zhijiang_school_visit",
+  "footage_type": "phone_gym",
+  "annotator": "frame_review_contact_sheet",
+  "annotation_date": "2026-10-19",
+  "notes": "Public-domain clip. Single jump shot released at about f240 (4.0 s at 60 fps); ball reaches the rim around f264. No passes or screens labeled: the wide angle makes possession changes ambiguous, so only the unambiguous shot is recorded. Outcome recorded as unknown.",
+  "shots": [
+    {
+      "frame_idx": 240,
+      "track_id": 1,
+      "shot_type": "other",
+      "outcome": "unknown"
+    }
+  ],
+  "passes": [],
+  "screens": [],
+  "pnrs": [],
+  "blocks": [],
+  "rebounds": [],
+  "dunks": [],
+  "team_assignments": [],
+  "tracking_checks": [
+    {
+      "frame_idx": 240,
+      "expected_num_players": 6
+    }
+  ]
+}

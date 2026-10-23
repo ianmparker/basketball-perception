@@ -1,0 +1,264 @@
+{
+  "game_id": "401810030",
+  "video_path": "C:\\Users\\ianmp\\Videos\\basketball-reference\\curated\\full-games\\nba-knicks-timberwolves-2025-11-06.mp4",
+  "home_team_id": 18,
+  "away_team_id": 16,
+  "period": 4,
+  "clock_s": 0.0,
+  "score_home": 137,
+  "score_away": 114,
+  "possession_team_id": null,
+  "lineup_home": [],
+  "lineup_away": [],
+  "ruleset": "nba_2025_26",
+  "footage_type": "nba_broadcast",
+  "camera_spec": {
+    "height_ft": null,
+    "position": "broadcast",
+    "zoom": "unknown",
+    "source": "youtube-research"
+  },
+  "clock_anchors": [
+    {
+      "frame": 17100,
+      "period": 1,
+      "clock_s": 720
+    },
+    {
+      "frame": 18000,
+      "period": 1,
+      "clock_s": 670
+    },
+    {
+      "frame": 19800,
+      "period": 1,
+      "clock_s": 626
+    },
+    {
+      "frame": 23400,
+      "period": 1,
+      "clock_s": 577
+    },
+    {
+      "frame": 25200,
+      "period": 1,
+      "clock_s": 539
+    },
+    {
+      "frame": 32400,
+      "period": 1,
+      "clock_s": 404
+    },
+    {
+      "frame": 36000,
+      "period": 1,
+      "clock_s": 316
+    },
+    {
+      "frame": 50400,
+      "period": 1,
+      "clock_s": 50.3
+    },
+    {
+      "frame": 51300,
+      "period": 1,
+      "clock_s": 0
+    },
+    {
+      "frame": 56700,
+      "period": 2,
+      "clock_s": 720
+    },
+    {
+      "frame": 57600,
+      "period": 2,
+      "clock_s": 664
+    },
+    {
+      "frame": 64800,
+      "period": 2,
+      "clock_s": 486
+    },
+    {
+      "frame": 72000,
+      "period": 2,
+      "clock_s": 377
+    },
+    {
+      "frame": 75600,
+      "period": 2,
+      "clock_s": 305
+    },
+    {
+      "frame": 79200,
+      "period": 2,
+      "clock_s": 229
+    },
+    {
+      "frame": 82800,
+      "period": 2,
+      "clock_s": 189
+    },
+    {
+      "frame": 93600,
+      "period": 2,
+      "clock_s": 1.1
+    },
+    {
+      "frame": 94500,
+      "period": 2,
+      "clock_s": 0
+    },
+    {
+      "frame": 96300,
+      "period": 3,
+      "clock_s": 720
+    },
+    {
+      "frame": 97200,
+      "period": 3,
+      "clock_s": 690
+    },
+    {
+      "frame": 100800,
+      "period": 3,
+      "clock_s": 579
+    },
+    {
+      "frame": 104400,
+      "period": 3,
+      "clock_s": 531
+    },
+    {
+      "frame": 108000,
+      "period": 3,
+      "clock_s": 467
+    },
+    {
+      "frame": 111600,
+      "period": 3,
+      "clock_s": 424
+    },
+    {
+      "frame": 115200,
+      "period": 3,
+      "clock_s": 344
+    },
+    {
+      "frame": 118800,
+      "period": 3,
+      "clock_s": 291
+    },
+    {
+      "frame": 122400,
+      "period": 3,
+      "clock_s": 235
+    },
+    {
+      "frame": 126000,
+      "period": 3,
+      "clock_s": 174
+    },
+    {
+      "frame": 129600,
+      "period": 3,
+      "clock_s": 133
+    },
+    {
+      "frame": 133200,
+      "period": 3,
+      "clock_s": 44.2
+    },
+    {
+      "frame": 136800,
+      "period": 3,
+      "clock_s": 9.3
+    },
+    {
+      "frame": 137700,
+      "period": 3,
+      "clock_s": 0
+    },
+    {
+      "frame": 141300,
+      "period": 4,
+      "clock_s": 720.0
+    },
+    {
+      "frame": 142200,
+      "period": 4,
+      "clock_s": 692
+    },
+    {
+      "frame": 144000,
+      "period": 4,
+      "clock_s": 641
+    },
+    {
+      "frame": 147600,
+      "period": 4,
+      "clock_s": 621
+    },
+    {
+      "frame": 151200,
+      "period": 4,
+      "clock_s": 617
+    },
+    {
+      "frame": 154800,
+      "period": 4,
+      "clock_s": 575
+    },
+    {
+      "frame": 158400,
+      "period": 4,
+      "clock_s": 525
+    },
+    {
+      "frame": 162000,
+      "period": 4,
+      "clock_s": 433
+    },
+    {
+      "frame": 165600,
+      "period": 4,
+      "clock_s": 407
+    },
+    {
+      "frame": 169200,
+      "period": 4,
+      "clock_s": 375
+    },
+    {
+      "frame": 176400,
+      "period": 4,
+      "clock_s": 290
+    },
+    {
+      "frame": 180000,
+      "period": 4,
+      "clock_s": 217
+    },
+    {
+      "frame": 183600,
+      "period": 4,
+      "clock_s": 156
+    },
+    {
+      "frame": 187200,
+      "period": 4,
+      "clock_s": 100
+    },
+    {
+      "frame": 190800,
+      "period": 4,
+      "clock_s": 19.9
+    },
+    {
+      "frame": 191700,
+      "period": 4,
+      "clock_s": 0
+    }
+  ],
+  "notes": "Anchors manually read from the broadcast scorebug. Not a full automated clock alignment; frames outside anchored clock ranges are left unaligned."
+}

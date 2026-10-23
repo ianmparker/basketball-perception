@@ -1,0 +1,828 @@
+{
+  "version": 1,
+  "updated": "2026-10-21",
+  "purpose": "Paper-derived hypotheses that are ready to become code. An item enters when a note names the metric, the baseline, and the failure it addresses. It leaves when eval/ settles it.",
+  "status_values": [
+    "proposed",
+    "ready",
+    "running",
+    "blocked",
+    "done",
+    "rejected"
+  ],
+  "experiments": [
+    {
+      "id": "EX-001",
+      "title": "Calibration acceptance uses p95 and temporal jitter, not RMS alone",
+      "hypothesis": "A calibration that passes an RMS gate can still inject >1 ft p95 error and visible speed noise; adding p95 and a static-point jitter test changes which calibrations we accept.",
+      "track": "perception.calibration",
+      "sources": [
+        "szeliski2022",
+        "hartley2004",
+        "arxiv-2404.09807"
+      ],
+      "note": "knowledge/perception/01-camera-calibration.md",
+      "metric": "p95 reprojection error (ft), static-point jitter (ft, 100 frames)",
+      "baseline": "RMS only; current 0.696 ft RMS on the Luka/Ayton clip",
+      "expected_effect": "Reject 1-2 calibrations that currently pass; no change to downstream F1 until events are re-scored",
+      "effort": "S",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "python scripts/calibrate_from_points.py --help"
+    },
+    {
+      "id": "EX-002",
+      "title": "Compare 4-point, 8-point, and keypoint-model calibration on fixed gym footage",
+      "hypothesis": "For a static gym camera, 6-8 well-spread points materially reduce p95 error versus 4, but the learned keypoint model still fails on non-NBA courts.",
+      "track": "perception.calibration",
+      "sources": [
+        "arxiv-2207.11709",
+        "arxiv-2404.08401",
+        "szeliski2022"
+      ],
+      "note": "knowledge/perception/01-camera-calibration.md",
+      "metric": "median/RMS/p95 reprojection ft; downstream speed error",
+      "baseline": "Manual 4-point calibration",
+      "expected_effect": "p95 improves without new data; keypoint model remains unusable on gym",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "eval/score.py --clip <gym_clip> --skip-pipeline"
+    },
+    {
+      "id": "EX-010",
+      "title": "Measure real ball recall against labeled positions",
+      "hypothesis": "The 35.1% frame-coverage number is not recall; on labeled frames, recall@15px will be higher for visible balls and near zero under occlusion, changing where we invest.",
+      "track": "perception.tracking",
+      "sources": [
+        "arxiv-2110.06864",
+        "arxiv-2406.19655"
+      ],
+      "note": "knowledge/perception/02-ball-tracking.md",
+      "metric": "recall@5px, recall@15px, precision at conf=0.25",
+      "baseline": "35.1% frame coverage (not a recall metric)",
+      "expected_effect": "A defensible recall number and a visibility-bucket breakdown",
+      "effort": "M",
+      "owner": "annotation-lead + perception-researcher",
+      "status": "proposed",
+      "eval_gate": "eval/score.py"
+    },
+    {
+      "id": "EX-011",
+      "title": "Low-score association for the ball",
+      "hypothesis": "ByteTrack's second association stage recovers ball frames that the 0.25 threshold discards, improving shot F1 without increasing false events.",
+      "track": "perception.tracking",
+      "sources": [
+        "arxiv-2110.06864",
+        "arxiv-2406.19655"
+      ],
+      "note": "knowledge/perception/02-ball-tracking.md",
+      "metric": "shot F1 @5 frames; false-positive events; ball track fragments",
+      "baseline": "conf=0.25, two-pass interpolation",
+      "expected_effect": "Recall up; precision must not drop beyond the noise floor",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "eval/score.py --refresh"
+    },
+    {
+      "id": "EX-012",
+      "title": "Gravity-constrained interpolation",
+      "hypothesis": "A constant-acceleration model with a gravity prior rejects physically impossible interpolations better than a max-speed gate, reducing fake shot trajectories.",
+      "track": "perception.tracking",
+      "sources": [
+        "fontanella2006",
+        "arxiv-2003.12039"
+      ],
+      "note": "knowledge/perception/02-ball-tracking.md",
+      "metric": "shot F1; impossible-trajectory rate; interpolated-frame count",
+      "baseline": "pandas linear interpolation + max-speed gate",
+      "expected_effect": "Fewer false shots during passes and deflections",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "eval/score.py --refresh"
+    },
+    {
+      "id": "EX-020",
+      "title": "Add HOTA to the tracking scorecard",
+      "hypothesis": "MOTA/IDF1 hide association failures that HOTA exposes; adding HOTA changes the tracker recommendation on at least one clip.",
+      "track": "measurement.evaluation",
+      "sources": [
+        "arxiv-2009.07736",
+        "arxiv-1603.00831"
+      ],
+      "note": "knowledge/measurement/03-metrics-and-scorecards.md",
+      "metric": "HOTA, DetA, AssA",
+      "baseline": "MOTA/IDF1 only",
+      "expected_effect": "A diagnostic split between detection and association errors",
+      "effort": "S",
+      "owner": "eval-engineer",
+      "status": "proposed",
+      "eval_gate": "python -m pytest tests/test_tracking_metrics.py"
+    },
+    {
+      "id": "EX-021",
+      "title": "Camera-motion compensation for broadcast tracking",
+      "hypothesis": "BoT-SORT-style GMC reduces ID switches on pan/zoom clips without hurting static clips.",
+      "track": "perception.tracking",
+      "sources": [
+        "arxiv-2206.14651",
+        "arxiv-2304.05170"
+      ],
+      "note": "knowledge/perception/03-multi-object-tracking.md",
+      "metric": "HOTA, ID switches, fragments",
+      "baseline": "ByteTrack without GMC",
+      "expected_effect": "Fewer switches on pans; neutral on static",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "eval/score.py --refresh"
+    },
+    {
+      "id": "EX-030",
+      "title": "Freeze the event ontology v1",
+      "hypothesis": "A single JSON ontology with IDs and definitions reduces label disagreement and makes detectors comparable; the current six classes miss rebounds, fouls, and violations.",
+      "track": "basketball.ontology",
+      "sources": [
+        "arxiv-2607.21267",
+        "nba_stats_glossary",
+        "fiba2026"
+      ],
+      "note": "knowledge/basketball/02-ontology-and-terminology.md",
+      "metric": "ontology coverage of BasketEvent classes; label agreement (kappa)",
+      "baseline": "Six ClipResult event lists, no shared IDs",
+      "expected_effect": "A machine-readable contract and a gap list",
+      "effort": "M",
+      "owner": "basketball-domain-expert + annotation-lead",
+      "status": "proposed",
+      "eval_gate": "python -m pytest tests/test_schema_health_fields.py"
+    },
+    {
+      "id": "EX-031",
+      "title": "Rule-based rebound detection",
+      "hypothesis": "A rebound can be detected from shot outcome + ball descent + first player to control, with usable precision on labeled clips.",
+      "track": "perception.events",
+      "sources": [
+        "arxiv-2607.21267",
+        "arxiv-2608.19646",
+        "fontanella2006"
+      ],
+      "note": "knowledge/perception/04-event-detection.md",
+      "metric": "rebound P/R/F1 @15 frames; offensive/defensive split",
+      "baseline": "No rebound detector",
+      "expected_effect": "First outcome event class; exposes ball-tracking gaps at the rim",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "eval/score.py --clip <rebound_clip>"
+    },
+    {
+      "id": "EX-040",
+      "title": "DINOv2 vs HSV K-means for team assignment",
+      "hypothesis": "Frozen DINOv2 features improve team assignment when jersey colors are similar, but not when they are already distinct.",
+      "track": "perception.representation",
+      "sources": [
+        "arxiv-2304.07193",
+        "arxiv-2103.00020"
+      ],
+      "note": "knowledge/perception/05-representation-learning.md",
+      "metric": "team accuracy per game; confusion matrix; abstention rate",
+      "baseline": "K-means HSV (current default)",
+      "expected_effect": "Gain concentrated in the similar-jersey clips",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "eval/score.py --refresh"
+    },
+    {
+      "id": "EX-041",
+      "title": "Player retrieval benchmark from frozen features",
+      "hypothesis": "DINOv2 embeddings support same-player retrieval across frames well enough to seed ReID, even without basketball-specific fine-tuning.",
+      "track": "perception.representation",
+      "sources": [
+        "arxiv-2304.07193"
+      ],
+      "note": "knowledge/perception/05-representation-learning.md",
+      "metric": "mAP@10 on same/different player pairs",
+      "baseline": "Color histogram",
+      "expected_effect": "A go/no-go for a ReID embedding head",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "none (research benchmark)"
+    },
+    {
+      "id": "EX-050",
+      "title": "Make the court template a ruleset parameter",
+      "hypothesis": "Hard-coded NBA dimensions misclassify FIBA/NCAA shots; a ruleset config removes a silent error class.",
+      "track": "basketball.rules",
+      "sources": [
+        "fiba2026",
+        "nba2025rules"
+      ],
+      "note": "knowledge/basketball/01-rules-and-officiating.md",
+      "metric": "shot-type accuracy by ruleset; 3-point classification errors",
+      "baseline": "Single NBA court template",
+      "expected_effect": "Correct shot type on non-NBA footage",
+      "effort": "S",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "python -m pytest tests/test_shot_detector_court_gate.py"
+    },
+    {
+      "id": "EX-060",
+      "title": "Generate Pydantic enums from the ontology",
+      "hypothesis": "Generating event enums from one JSON file prevents code/label drift and fails tests on unknown IDs.",
+      "track": "basketball.ontology",
+      "sources": [
+        "arxiv-2607.21267",
+        "nba_stats_glossary"
+      ],
+      "note": "knowledge/basketball/02-ontology-and-terminology.md",
+      "metric": "unknown-ID test failures; schema coverage",
+      "baseline": "Hand-written event classes",
+      "expected_effect": "Contract enforcement; no behavior change",
+      "effort": "S",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "python -m pytest tests/test_schema_health_fields.py"
+    },
+    {
+      "id": "EX-070",
+      "title": "Possession-level matchup assignment",
+      "hypothesis": "Hungarian assignment plus temporal smoothing yields stable offensive-defensive matchups, the prerequisite for coverage classification.",
+      "track": "basketball.tactics",
+      "sources": [
+        "arxiv-1405.0231",
+        "arxiv-1612.05502"
+      ],
+      "note": "knowledge/basketball/03-tactics-and-coverage.md",
+      "metric": "assignment stability; coach agreement on 20 possessions",
+      "baseline": "Nearest-defender per frame",
+      "expected_effect": "Fewer spurious switches; usable matchup data",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "none (qualitative + stability metric)"
+    },
+    {
+      "id": "EX-080",
+      "title": "Zone-average xPTS baseline",
+      "hypothesis": "A zone-average points-per-shot baseline is already more useful to a coach than raw FG%, and is the bar any model must beat.",
+      "track": "basketball.analytics",
+      "sources": [
+        "arxiv-1408.0777",
+        "arxiv-1107.5793",
+        "oliver2004"
+      ],
+      "note": "knowledge/basketball/04-shot-quality-and-epv.md",
+      "metric": "log loss, Brier, calibration curve",
+      "baseline": "League-average FG% by zone",
+      "expected_effect": "Zone baseline implemented: Denver 2023-24 Brier 0.2354, log loss 0.6636 on 16 held-out games; xPTS ordering RA 1.303 > corner 3 1.153 > above-break 3 1.127 > paint 0.975 > mid-range 0.910.",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python scripts/nba_shot_ingest.py --season 2023-24 --team-id 1610612743 --report"
+    },
+    {
+      "id": "EX-090",
+      "title": "Reconcile possession accounting with the box score",
+      "hypothesis": "Our POSS/ORtg/DRtg can be made to match the public box score on one game, exposing every edge case in the ledger.",
+      "track": "basketball.analytics",
+      "sources": [
+        "oliver2004",
+        "bref_glossary",
+        "nba_stats_glossary"
+      ],
+      "note": "knowledge/measurement/01-four-factors-and-team-evaluation.md",
+      "metric": "absolute difference in POSS, ORtg, DRtg, Four Factors",
+      "baseline": "No possession ledger",
+      "expected_effect": "A trustworthy accounting layer before any tracking metric",
+      "effort": "M",
+      "owner": "basketball-domain-expert + eval-engineer",
+      "status": "proposed",
+      "eval_gate": "none (accounting check)"
+    },
+    {
+      "id": "EX-100",
+      "title": "Paired bootstrap baseline vs candidate",
+      "hypothesis": "A paired bootstrap over clips answers the ship/no-ship question more tightly than comparing two independent intervals.",
+      "track": "measurement.experiment",
+      "sources": [
+        "murphy2022",
+        "arxiv-2009.07736"
+      ],
+      "note": "knowledge/measurement/02-experiment-design-and-noise.md",
+      "metric": "paired difference CI; minimum detectable effect",
+      "baseline": "Independent CIs",
+      "expected_effect": "Better decisions on small clip counts",
+      "effort": "S",
+      "owner": "eval-engineer",
+      "status": "proposed",
+      "eval_gate": "python -m pytest tests/test_eval_diagnostics.py"
+    },
+    {
+      "id": "EX-110",
+      "title": "Add footage_type and calibration metadata to ClipResult",
+      "hypothesis": "Without a regime field, scorecards average a broadcast win over a gym collapse; adding metadata makes the breakdown possible.",
+      "track": "systems.runtime",
+      "sources": [
+        "arxiv-2208.08190",
+        "arxiv-2304.05170",
+        "arxiv-2503.18282"
+      ],
+      "note": "knowledge/systems/01-footage-regimes.md",
+      "metric": "scorecard completeness; per-regime F1",
+      "baseline": "No regime field",
+      "expected_effect": "A regime-aware scorecard",
+      "effort": "S",
+      "owner": "infra-engineer + eval-engineer",
+      "status": "proposed",
+      "eval_gate": "python -m pytest tests/test_schema_health_fields.py"
+    },
+    {
+      "id": "EX-111",
+      "title": "Measure the broadcast-to-gym detection gap",
+      "hypothesis": "The current detector loses substantial recall on fixed-gym footage, and per-regime thresholds recover part of it.",
+      "track": "systems.runtime",
+      "sources": [
+        "arxiv-2208.08190",
+        "arxiv-2304.05170"
+      ],
+      "note": "knowledge/systems/01-footage-regimes.md",
+      "metric": "mAP@50 and recall by regime; threshold sweep",
+      "baseline": "Broadcast-trained YOLO at conf=0.25",
+      "expected_effect": "A quantified domain gap and a per-regime operating point",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "eval/score.py --clip <gym_clip>"
+    },
+    {
+      "id": "EX-170",
+      "title": "Screen/PnR proposal-stage result",
+      "hypothesis": "The learned single-frame screen/PnR detector is useful as a high-recall candidate generator but not as a final event detector; the evidence supports proposal-only, not integration.",
+      "track": "perception.events",
+      "sources": [
+        "arxiv-2105.07404",
+        "arxiv-2607.21267",
+        "arxiv-2608.19646"
+      ],
+      "note": "knowledge/perception/08-screen-pnr-result.md",
+      "metric": "screen/PnR event P/R/F1 at +/-15 frames; candidate recall; candidates per clip",
+      "baseline": "rule-based screen detector on the same 60 clips",
+      "expected_effect": "Proposal-only: screen F1 0.244 at 0.25 (0.458 at 0.50); PnR 0.209 at 0.25 (0.364 at 0.50); no statistically measured win over the rule",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "done",
+      "eval_gate": "data/results/screen_pnr_scorecard.json"
+    },
+    {
+      "id": "EX-171",
+      "title": "Pair/temporal screen classifier",
+      "hypothesis": "A second-stage pair/temporal classifier over candidate clips can lift precision at recall >= 0.6 by using screener, cutter, and defender tracks plus interval context.",
+      "track": "perception.events",
+      "sources": [
+        "arxiv-2105.07404",
+        "arxiv-2607.21267",
+        "arxiv-2404.05392"
+      ],
+      "note": "knowledge/perception/08-screen-pnr-result.md",
+      "metric": "event-level P/R/F1; pair-assignment accuracy; interval IoU",
+      "baseline": "proposal-stage YOLO at a recall-oriented threshold",
+      "expected_effect": "Precision lift at fixed recall; requires upstream tracking/team/possession scorecard and pair labels",
+      "effort": "L",
+      "owner": "perception-researcher",
+      "status": "blocked",
+      "eval_gate": "requires tracking/team/possession scorecard"
+    },
+    {
+      "id": "EX-081",
+      "title": "Logistic xPTS with distance, angle, and contest",
+      "hypothesis": "A logistic model with distance, angle, shot type, and contest beats the zone baseline on grouped log loss and calibration, especially for player-level shots.",
+      "track": "basketball.analytics",
+      "sources": [
+        "arxiv-1408.0777",
+        "arxiv-1107.5793",
+        "arxiv-1908.05745"
+      ],
+      "note": "knowledge/basketball/04-shot-quality-and-epv.md",
+      "metric": "grouped log loss, Brier, calibration curve",
+      "baseline": "zone baseline: Denver Brier 0.2354, log loss 0.6636",
+      "expected_effect": "Neutral vs zone baseline: Denver Brier 0.2345 vs 0.2354, log loss 0.6613 vs 0.6636; Curry 0.2351 vs 0.2362, 0.6630 vs 0.6653. Within noise; middle bins remain overconfident.",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python scripts/xpts_report.py --file outputs/nba-shots/2023-24/team-1610612743.json --model both"
+    },
+    {
+      "id": "EX-084",
+      "title": "Contest-aware xPTS",
+      "hypothesis": "Adding defender distance and closeout speed at release will improve xPTS calibration beyond a location-only zone/logistic baseline, especially in the middle probability bins.",
+      "track": "basketball.analytics",
+      "sources": [
+        "arxiv-1408.0777",
+        "arxiv-1908.05745",
+        "arxiv-1609.04849"
+      ],
+      "note": "knowledge/basketball/04-shot-quality-and-epv.md",
+      "metric": "grouped log loss, Brier, calibration curve",
+      "baseline": "zone/logistic location-only baseline (Brier 0.2345, log loss 0.6613)",
+      "expected_effect": "Better calibration in the 0.35-0.55 bins; requires defender tracking at release",
+      "effort": "L",
+      "owner": "basketball-domain-expert",
+      "status": "blocked",
+      "eval_gate": "requires reliable defender distance at release"
+    },
+    {
+      "id": "EX-180",
+      "title": "Freeze play taxonomy v1",
+      "hypothesis": "A small, orthogonal taxonomy of play types, coverages, and families makes play recognition comparable and exposes ontology gaps.",
+      "track": "basketball.strategy",
+      "sources": [
+        "winter-triple-post-offense",
+        "arxiv-2607.21267",
+        "nba-stats-api"
+      ],
+      "note": "knowledge/basketball/06-strategy-and-playbooks.md",
+      "metric": "taxonomy coverage; label agreement (kappa)",
+      "baseline": "no shared play taxonomy",
+      "expected_effect": "Machine-readable taxonomy v1: 11 play types, 10 coverages, 7 families",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python research/ontology/validate.py"
+    },
+    {
+      "id": "EX-181",
+      "title": "Play-recognition baseline on 50 possessions",
+      "hypothesis": "A rules-based screen/coverage detector and a sequence model on tracking features can beat a naive PnR-vs-ISO baseline at the possession level.",
+      "track": "basketball.strategy",
+      "sources": [
+        "arxiv-2607.21267",
+        "arxiv-2608.19646",
+        "nba-stats-api"
+      ],
+      "note": "knowledge/basketball/06-strategy-and-playbooks.md",
+      "metric": "per-possession top-1/top-3 accuracy; per-class confusion; calibration",
+      "baseline": "PnR-vs-ISO heuristic on possession features",
+      "expected_effect": "A defensible play-type baseline and a list of confusable pairs",
+      "effort": "L",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "50 labeled possessions, grouped by game"
+    },
+    {
+      "id": "EX-182",
+      "title": "Counter mapping from coverage to action",
+      "hypothesis": "A coach-reviewed table mapping coverage (drop, switch, ice, zone, press) to a counter action is more useful than a single play-type label.",
+      "track": "basketball.strategy",
+      "sources": [
+        "winter-triple-post-offense",
+        "arxiv-1405.0231",
+        "taylor2016"
+      ],
+      "note": "knowledge/basketball/06-strategy-and-playbooks.md",
+      "metric": "coach agreement; counter usability",
+      "baseline": "no counter layer",
+      "expected_effect": "A ranked counter card with preconditions and evidence",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "proposed",
+      "eval_gate": "coach review of 20 coverage clips"
+    },
+    {
+      "id": "EX-190",
+      "title": "NBA box-score Four Factors baseline",
+      "hypothesis": "The possession ledger and Four Factors can be computed from an NBA box score and match hand calculations before applying them to video.",
+      "track": "basketball.analytics",
+      "sources": [
+        "oliver2004",
+        "bref_glossary",
+        "nba-stats-api"
+      ],
+      "note": "knowledge/measurement/01-four-factors-and-team-evaluation.md",
+      "metric": "POSS, ORtg, DRtg, Four Factors vs hand calculation",
+      "baseline": "hand calculation",
+      "expected_effect": "Validated accounting layer; IND 121-CLE 116: POSS 107.6/103.0, ORtg 112.5/112.6, pace 105.3",
+      "effort": "S",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python scripts/nba_boxscore_ingest.py --game-id 0022300001 --report"
+    },
+    {
+      "id": "EX-200",
+      "title": "NBA game report v0",
+      "hypothesis": "A one-page report combining Four Factors and shot profile is more useful to a coach than either table alone, and it exposes which perception layers are missing.",
+      "track": "basketball.analytics",
+      "sources": [
+        "oliver2004",
+        "bref_glossary",
+        "nba-stats-api"
+      ],
+      "note": "knowledge/measurement/01-four-factors-and-team-evaluation.md",
+      "metric": "report completeness; coach usability",
+      "baseline": "separate Four Factors and shot tables",
+      "expected_effect": "One-page Markdown report; v0 has no tracking, contest, or play recognition",
+      "effort": "S",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python scripts/nba_game_report.py --game-id 0022300001 --season 2023-24"
+    },
+    {
+      "id": "EX-210",
+      "title": "Calibrate the three Phase B games",
+      "hypothesis": "A fixed/panning Hudl-like camera can be calibrated to <1 ft p95 on a usable segment, enabling the shot chart.",
+      "track": "perception.calibration",
+      "sources": [
+        "szeliski2022",
+        "arxiv-2207.11709",
+        "arxiv-2404.08401"
+      ],
+      "note": "knowledge/perception/01-camera-calibration.md",
+      "metric": "median/RMS/p95 reprojection ft; temporal jitter",
+      "baseline": "manual 4-point calibration",
+      "expected_effect": "3 games calibrated; p95 < 1 ft on usable segments",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "blocked",
+      "eval_gate": "requires torch env + manual points"
+    },
+    {
+      "id": "EX-220",
+      "title": "NBA Stats API PBP cross-check",
+      "hypothesis": "The official NBA Stats API v3 is an independent second source that can validate the canonical ESPN-based state layer's points and possession count.",
+      "track": "basketball.analytics",
+      "sources": [
+        "nba-stats-api",
+        "oliver2004",
+        "arxiv-2608.19646"
+      ],
+      "note": "knowledge/perception/09-possession-ledger.md",
+      "metric": "points exactness; possession count vs box estimate",
+      "baseline": "box-score POSS estimate",
+      "expected_effect": "205 possessions vs 210.6 estimate; points 121/116 exact; 2.7% POSS gap",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python scripts/nba_pbp_ingest.py --game-id 0022300001 --report"
+    },
+    {
+      "id": "EX-221",
+      "title": "Cross-source possession ledger comparison",
+      "hypothesis": "Comparing the NBA Stats and ESPN ledgers on the same game exposes possession-boundary disagreements that neither source reveals alone.",
+      "track": "measurement.evaluation",
+      "sources": [
+        "nba-stats-api",
+        "oliver2004",
+        "arxiv-2608.19646"
+      ],
+      "note": "knowledge/perception/09-possession-ledger.md",
+      "metric": "points per team; possession count; boundary disagreement count",
+      "baseline": "ESPN canonical ledger",
+      "expected_effect": "A concrete list of boundary disagreements to debug",
+      "effort": "L",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "one game mapped across NBA game id and ESPN event id"
+    },
+    {
+      "id": "EX-222",
+      "title": "Per-quarter possession ledger reconciliation",
+      "hypothesis": "Per-quarter reconciliation exposes and-1, technical, and team-rebound edge cases and improves the ledger.",
+      "track": "basketball.analytics",
+      "sources": [
+        "nba-stats-api",
+        "oliver2004"
+      ],
+      "note": "knowledge/perception/09-possession-ledger.md",
+      "metric": "per-quarter points and possession counts",
+      "baseline": "full-game ledger",
+      "expected_effect": "edge-case inventory and a tighter POSS match",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "proposed",
+      "eval_gate": "box score by quarter"
+    },
+    {
+      "id": "EX-230",
+      "title": "NBA Synergy team play-type profile",
+      "hypothesis": "The NBA Synergy play-type endpoint gives a usable aggregate answer to what a team runs and how efficient it is, and a prior for video play recognition.",
+      "track": "basketball.strategy",
+      "sources": [
+        "synergy-sportradar",
+        "nba-stats-api",
+        "taylor2016"
+      ],
+      "note": "knowledge/basketball/07-playtype-profile.md",
+      "metric": "play-type frequency, PPP, eFG%, TOV%, FT%, percentile",
+      "baseline": "league average by play type",
+      "expected_effect": "30 teams x 11 play types cached; IND 2023-24 profile documented",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python scripts/nba_playtype_ingest.py --season 2023-24 --team-id 1610612754"
+    },
+    {
+      "id": "EX-231",
+      "title": "Player-level play-type profiles",
+      "hypothesis": "Player-level Synergy profiles identify each player's action mix and efficiency, which is more actionable for matchup planning than a team aggregate.",
+      "track": "basketball.strategy",
+      "sources": [
+        "synergy-sportradar",
+        "nba-stats-api"
+      ],
+      "note": "knowledge/basketball/07-playtype-profile.md",
+      "metric": "player play-type frequency and PPP vs team/league",
+      "baseline": "team-level profile",
+      "expected_effect": "Pacers rotation and Haliburton profile documented; player-level PnR/spot-up/transition mix exposed",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python scripts/nba_playtype_ingest.py --season 2023-24 --player-or-team P --team-id 1610612754"
+    },
+    {
+      "id": "EX-232",
+      "title": "Video play recognition vs Synergy frequencies",
+      "hypothesis": "A per-possession video play classifier can be compared with Synergy's aggregate frequencies on the same team and season, exposing where our labels and model disagree.",
+      "track": "basketball.strategy",
+      "sources": [
+        "synergy-sportradar",
+        "arxiv-2607.21267",
+        "arxiv-2608.19646"
+      ],
+      "note": "knowledge/basketball/07-playtype-profile.md",
+      "metric": "per-possession top-1/top-3; frequency distance vs Synergy",
+      "baseline": "Synergy team play-type mix",
+      "expected_effect": "A label/model gap report; requires per-possession labels",
+      "effort": "L",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "50 labeled possessions on one team"
+    },
+    {
+      "id": "EX-240",
+      "title": "Pre-game scout report v0",
+      "hypothesis": "Combining team Four Factors, Synergy play types, player roles, and shot profile into one page gives a usable pre-game prior.",
+      "track": "basketball.strategy",
+      "sources": [
+        "synergy-sportradar",
+        "nba-stats-api",
+        "taylor2016"
+      ],
+      "note": "knowledge/basketball/07-playtype-profile.md",
+      "metric": "report completeness; source values match caches",
+      "baseline": "separate team/player play-type tables",
+      "expected_effect": "One-page IND 2023-24 report: 2nd ORtg, 24th DRtg, 2nd pace",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "done",
+      "eval_gate": "python scripts/nba_scout_report.py --team-id 1610612754 --season 2023-24"
+    },
+    {
+      "id": "EX-241",
+      "title": "Opponent-specific scout report",
+      "hypothesis": "Combining both teams profiles into a matchup page surfaces attack/defend priorities better than a single-team page.",
+      "track": "basketball.strategy",
+      "sources": [
+        "synergy-sportradar",
+        "nba-stats-api"
+      ],
+      "note": "knowledge/basketball/07-playtype-profile.md",
+      "metric": "matchup page completeness; coach review",
+      "baseline": "single-team scout report",
+      "expected_effect": "One matchup page with explicit attack/defend priorities",
+      "effort": "M",
+      "owner": "basketball-domain-expert",
+      "status": "proposed",
+      "eval_gate": "coach review on one matchup"
+    },
+    {
+      "id": "EX-260",
+      "title": "Scorebug clock alignment for shot events",
+      "hypothesis": "The broadcast scorebug clock can align PBP shot events to live-play frames more reliably than sparse manual anchors.",
+      "track": "perception.events",
+      "sources": [
+        "nba-stats-api",
+        "oliver2004"
+      ],
+      "note": "knowledge/perception/10-shot-event-baseline.md",
+      "metric": "aligned events / selected; clock difference",
+      "baseline": "manual anchors",
+      "expected_effect": "18/20 aligned; offsets up to 13s corrected",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "done",
+      "eval_gate": "python scripts/align_shots_by_scorebug.py"
+    },
+    {
+      "id": "EX-261",
+      "title": "Shot attempt detector baseline",
+      "hypothesis": "The existing ball-trajectory shot detector finds at least one shot in PBP-centered NBA broadcast clips.",
+      "track": "perception.events",
+      "sources": [
+        "nba-stats-api",
+        "arxiv-2607.21267"
+      ],
+      "note": "knowledge/perception/10-shot-event-baseline.md",
+      "metric": "clip-level detection; by shot type",
+      "baseline": "PBP shot labels",
+      "expected_effect": "10/20 clips detected; layups/mid-range weak",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "done",
+      "eval_gate": "python scripts/eval_shot_attempts.py --validation outputs/shot-events/401810030/validation_ocr.json"
+    },
+    {
+      "id": "EX-262",
+      "title": "Layup and rim attempt detector",
+      "hypothesis": "Ball-near-rim plus trajectory features recover layup and dunk attempts that the vertical-streak detector misses.",
+      "track": "perception.events",
+      "sources": [
+        "nba-stats-api",
+        "arxiv-2607.21267"
+      ],
+      "note": "knowledge/perception/10-shot-event-baseline.md",
+      "metric": "recall/precision on layup/dunk clips",
+      "baseline": "EX-261 shot detector",
+      "expected_effect": "Recover at least 8/10 at-rim attempts",
+      "effort": "L",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "20 scorebug-aligned layup/dunk clips"
+    },
+    {
+      "id": "EX-263",
+      "title": "Rebound detector",
+      "hypothesis": "Ball-off-rim plus player proximity and possession change detects offensive and defensive rebounds on missed shots.",
+      "track": "perception.events",
+      "sources": [
+        "nba-stats-api",
+        "oliver2004"
+      ],
+      "note": "knowledge/perception/10-shot-event-baseline.md",
+      "metric": "rebound F1; offensive/defensive split",
+      "baseline": "PBP rebound labels",
+      "expected_effect": "First video rebound baseline",
+      "effort": "L",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "20 scorebug-aligned missed-shot clips"
+    },
+    {
+      "id": "EX-264",
+      "title": "Made/miss classifier",
+      "hypothesis": "Rim, net, and ball-trajectory features separate made from missed shots on scorebug-aligned clips.",
+      "track": "perception.events",
+      "sources": [
+        "nba-stats-api",
+        "arxiv-2607.21267"
+      ],
+      "note": "knowledge/perception/10-shot-event-baseline.md",
+      "metric": "accuracy/AUC on made vs missed",
+      "baseline": "PBP make/miss labels",
+      "expected_effect": "A measurable made/miss baseline",
+      "effort": "L",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "50 scorebug-aligned shot clips"
+    },
+    {
+      "id": "EX-265",
+      "title": "Clean negative set for shot attempts",
+      "hypothesis": "Scorebug-aligned turnover possessions with no shot attempt give a trustworthy false-positive rate for shot detectors.",
+      "track": "perception.events",
+      "sources": [
+        "nba-stats-api",
+        "oliver2004"
+      ],
+      "note": "knowledge/perception/10-shot-event-baseline.md",
+      "metric": "clip-level false-positive rate",
+      "baseline": "noisy timeout/substitution windows",
+      "expected_effect": "10 clean turnover negatives; baseline 1/10 FP, rise80 3/10, rise60 6/10",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "done",
+      "eval_gate": "python scripts/nba_clean_negatives.py --count 10 --after 0.5"
+    },
+    {
+      "id": "EX-266",
+      "title": "Pose and geometry shot-candidate filter",
+      "hypothesis": "Wrist-above-elbow and ball-player-rim geometry reject drives and passes admitted by a high-recall shot candidate threshold.",
+      "track": "perception.events",
+      "sources": [
+        "nba-stats-api",
+        "arxiv-2607.21267"
+      ],
+      "note": "knowledge/perception/10-shot-event-baseline.md",
+      "metric": "precision/recall on 20 positives + 10 clean negatives",
+      "baseline": "MIN_RISE_PX=80 candidate generator",
+      "expected_effect": "Keep >=20/20 recall and cut clean-negative FPs below 3/10",
+      "effort": "M",
+      "owner": "perception-researcher",
+      "status": "proposed",
+      "eval_gate": "20 scorebug-aligned positives + 10 clean negatives"
+    }
+  ]
+}

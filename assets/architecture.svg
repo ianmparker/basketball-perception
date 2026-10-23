@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="350" viewBox="0 0 900 350" role="img" aria-labelledby="title desc">
+  <title id="title">Broadcast perception pipeline architecture</title>
+  <desc id="desc">Video flows through detection, tracking, event recognition, and rendering. Court calibration feeds tracking; pose and team/possession feed event recognition.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f6b8f"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="350" fill="#ffffff"/>
+
+  <g font-family="Segoe UI, Arial, Helvetica, sans-serif">
+    <!-- main flow -->
+    <g fill="#f4f7f9" stroke="#2f6b8f" stroke-width="1.4">
+      <rect x="30"  y="55" width="130" height="74" rx="8"/>
+      <rect x="190" y="55" width="150" height="74" rx="8"/>
+      <rect x="370" y="55" width="150" height="74" rx="8"/>
+      <rect x="550" y="55" width="130" height="74" rx="8"/>
+      <rect x="710" y="55" width="160" height="74" rx="8"/>
+    </g>
+
+    <g fill="#12293f" font-size="14.5" font-weight="600" text-anchor="middle">
+      <text x="95"  y="84">Video</text>
+      <text x="265" y="84">Detection</text>
+      <text x="445" y="84">Tracking</text>
+      <text x="615" y="84">Events</text>
+      <text x="790" y="84">Render</text>
+    </g>
+    <g fill="#55636e" font-size="11.5" text-anchor="middle">
+      <text x="95"  y="105">broadcast clip</text>
+      <text x="265" y="105">YOLO players + ball</text>
+      <text x="445" y="105">ByteTrack + ECC</text>
+      <text x="615" y="105">shot, screen, PnR</text>
+      <text x="790" y="105">MP4 + HTML report</text>
+    </g>
+
+    <!-- supporting signals -->
+    <g fill="#fbfcfd" stroke="#9bb4c4" stroke-width="1.3" stroke-dasharray="5 4">
+      <rect x="190" y="245" width="150" height="70" rx="8"/>
+      <rect x="370" y="245" width="150" height="70" rx="8"/>
+      <rect x="550" y="245" width="150" height="70" rx="8"/>
+    </g>
+    <g fill="#12293f" font-size="13" font-weight="600" text-anchor="middle">
+      <text x="265" y="272">Court calibration</text>
+      <text x="445" y="272">Pose</text>
+      <text x="625" y="272">Team + possession</text>
+    </g>
+    <g fill="#55636e" font-size="11" text-anchor="middle">
+      <text x="265" y="292">18 keypoints + fallback</text>
+      <text x="445" y="292">YOLOv8x-pose, 17 kp</text>
+      <text x="625" y="292">K-means HSV + CLIP</text>
+    </g>
+
+    <!-- main arrows -->
+    <g stroke="#2f6b8f" stroke-width="1.6" fill="none" marker-end="url(#arrow)">
+      <line x1="160" y1="92" x2="184" y2="92"/>
+      <line x1="340" y1="92" x2="364" y2="92"/>
+      <line x1="520" y1="92" x2="544" y2="92"/>
+      <line x1="680" y1="92" x2="704" y2="92"/>
+    </g>
+
+    <!-- supporting arrows -->
+    <g stroke="#9bb4c4" stroke-width="1.4" fill="none" stroke-dasharray="4 4" marker-end="url(#arrow)">
+      <path d="M 300 245 C 300 190, 400 180, 432 132"/>
+      <path d="M 470 245 C 470 195, 570 185, 600 132"/>
+      <path d="M 625 245 L 620 132"/>
+    </g>
+
+    <!-- caption -->
+    <g fill="#7a8791" font-size="11" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+      <text x="30" y="335">Solid: main path. Dashed: per-frame signals that support tracking and event recognition.</text>
+    </g>
+  </g>
+</svg>

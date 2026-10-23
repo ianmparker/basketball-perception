@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+.env.*
+
+# Data, footage, and weights
+data/*
+!data/.gitkeep
+outputs/
+runs/
+checkpoints/
+weights/
+*.pt
+*.pth
+*.onnx
+*.mlmodel
+*.task
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Logs and experiment tracking
+*.log
+wandb/
+lightning_logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local scratch
+scratch/
+tmp/

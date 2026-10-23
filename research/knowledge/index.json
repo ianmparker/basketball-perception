@@ -1,0 +1,997 @@
+{
+  "version": 1,
+  "notes": [
+    {
+      "id": "basketball.analytics.shot-quality",
+      "title": "Shot quality, expected points, and possession value",
+      "path": "knowledge/basketball/04-shot-quality-and-epv.md",
+      "layer": "basketball",
+      "track": "basketball.analytics",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-1408.0777",
+        "arxiv-1107.5793",
+        "arxiv-1908.05745",
+        "arxiv-2006.07513",
+        "arxiv-1609.04849",
+        "arxiv-2405.01182",
+        "nba-stats-api"
+      ],
+      "code": [
+        "analytics/",
+        "events/",
+        "visualization/"
+      ],
+      "prereqs": [
+        "basketball.tactics.spacing",
+        "measurement.evaluation"
+      ],
+      "tags": [
+        "EPV",
+        "xPTS",
+        "shot quality",
+        "value",
+        "calibration"
+      ],
+      "words": 1267,
+      "headings": [
+        "The two-layer model",
+        "Selection bias is the trap",
+        "A practical build order",
+        "v0 baseline: NBA 2023-24 (Denver)",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "measurement.basketball.four-factors",
+      "title": "Four Factors, pace, and team evaluation",
+      "path": "knowledge/measurement/01-four-factors-and-team-evaluation.md",
+      "layer": "measurement",
+      "track": "basketball.analytics",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "oliver2004",
+        "bref_glossary",
+        "arxiv-2002.04148",
+        "nba-stats-api"
+      ],
+      "code": [
+        "analytics/",
+        "eval/"
+      ],
+      "prereqs": [
+        "basketball.ontology.schema"
+      ],
+      "tags": [
+        "four factors",
+        "ORtg",
+        "pace",
+        "lineups",
+        "RAPM"
+      ],
+      "words": 932,
+      "headings": [
+        "The ledger",
+        "The Four Factors",
+        "v0 check: NBA box score",
+        "Sample size and noise",
+        "Player valuation",
+        "Coaching metrics that matter more than a composite",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.state.nba-stats-pbp-crosscheck",
+      "title": "NBA Stats API play-by-play cross-check",
+      "path": "knowledge/perception/09-possession-ledger.md",
+      "layer": "perception",
+      "track": "basketball.analytics",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "nba-stats-api",
+        "oliver2004",
+        "arxiv-2608.19646"
+      ],
+      "code": [
+        "analytics/possessions.py",
+        "scripts/nba_pbp_ingest.py",
+        "state_layer/possession.py",
+        "docs/STATE_LAYER.md"
+      ],
+      "prereqs": [
+        "basketball.ontology.schema"
+      ],
+      "tags": [
+        "possession",
+        "play-by-play",
+        "state",
+        "NBA",
+        "cross-check"
+      ],
+      "words": 691,
+      "headings": [
+        "What was built",
+        "Result: game `0022300001` (IND 121, CLE 116)",
+        "The data quirks that mattered",
+        "Why this is useful",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "basketball.officiating.review",
+      "title": "Officiating science and referee decision support",
+      "path": "knowledge/basketball/05-officiating.md",
+      "layer": "basketball",
+      "track": "basketball.officiating",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-21",
+      "sources": [
+        "price_wolfers2010",
+        "nba2025rules",
+        "fiba_documents"
+      ],
+      "code": [
+        "events/",
+        "docs/"
+      ],
+      "prereqs": [
+        "basketball.rules.officiating"
+      ],
+      "tags": [
+        "officiating",
+        "bias",
+        "replay",
+        "review",
+        "fouls"
+      ],
+      "words": 729,
+      "headings": [
+        "The product boundary",
+        "What is objectively checkable",
+        "What is judgment",
+        "Bias and identification",
+        "Referee mechanics as a camera prior",
+        "Data sources",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "basketball.ontology.schema",
+      "title": "Basketball ontology and event vocabulary",
+      "path": "knowledge/basketball/02-ontology-and-terminology.md",
+      "layer": "basketball",
+      "track": "basketball.ontology",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-21",
+      "sources": [
+        "nba_stats_glossary",
+        "bref_glossary",
+        "arxiv-2607.21267",
+        "fiba2026"
+      ],
+      "code": [
+        "inference/schema.py",
+        "eval/labels/schema.md",
+        "events/"
+      ],
+      "prereqs": [
+        "basketball.rules.officiating"
+      ],
+      "tags": [
+        "ontology",
+        "events",
+        "taxonomy",
+        "stats",
+        "labels"
+      ],
+      "words": 1107,
+      "headings": [
+        "Entities",
+        "Event taxonomy v1",
+        "Stats vocabulary",
+        "Roles and actions",
+        "Governance",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "basketball.rules.officiating",
+      "title": "Rules, dimensions, and officiating for a vision system",
+      "path": "knowledge/basketball/01-rules-and-officiating.md",
+      "layer": "basketball",
+      "track": "basketball.rules",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "fiba2026",
+        "nba2025rules",
+        "fiba_documents",
+        "price_wolfers2010"
+      ],
+      "code": [
+        "events/",
+        "docs/"
+      ],
+      "prereqs": [],
+      "tags": [
+        "rules",
+        "court",
+        "fouls",
+        "violations",
+        "refereeing",
+        "NBA",
+        "FIBA",
+        "NCAA"
+      ],
+      "words": 1020,
+      "headings": [
+        "Court and equipment",
+        "Violations a camera can adjudicate",
+        "Fouls: the hard boundary",
+        "Officiating mechanics (useful for camera priors)",
+        "Bias: what the evidence says",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "basketball.strategy.playbooks",
+      "title": "Strategy, playbooks, and play recognition",
+      "path": "knowledge/basketball/06-strategy-and-playbooks.md",
+      "layer": "basketball",
+      "track": "basketball.strategy",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-21",
+      "sources": [
+        "winter-triple-post-offense",
+        "taylor2016",
+        "arxiv-2607.21267",
+        "arxiv-2608.19646",
+        "nba-stats-api",
+        "synergy-sportradar"
+      ],
+      "code": [
+        "events/",
+        "analytics/",
+        "docs/screen-pnr-ontology.md"
+      ],
+      "prereqs": [
+        "basketball.ontology.schema",
+        "basketball.tactics.spacing"
+      ],
+      "tags": [
+        "strategy",
+        "playbook",
+        "triangle",
+        "play recognition",
+        "counters",
+        "matchup"
+      ],
+      "words": 1268,
+      "headings": [
+        "The unit hierarchy",
+        "The triangle as a case study",
+        "A working taxonomy",
+        "Recognition",
+        "Counters: the coaching layer",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "basketball.strategy.playtype-profile",
+      "title": "NBA play-type profiles from Synergy data",
+      "path": "knowledge/basketball/07-playtype-profile.md",
+      "layer": "basketball",
+      "track": "basketball.strategy",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "synergy-sportradar",
+        "nba-stats-api",
+        "taylor2016"
+      ],
+      "code": [
+        "analytics/playtypes.py",
+        "scripts/nba_playtype_ingest.py",
+        "scripts/playtype_report.py",
+        "scripts/nba_scout_report.py"
+      ],
+      "prereqs": [
+        "basketball.strategy.playbooks"
+      ],
+      "tags": [
+        "play types",
+        "synergy",
+        "scouting",
+        "team profile",
+        "play recognition"
+      ],
+      "words": 1409,
+      "headings": [
+        "What was built",
+        "Example: Indiana Pacers, 2023-24",
+        "Player profiles (EX-231)",
+        "Scout report (EX-240)",
+        "What this does not tell you",
+        "How to use it",
+        "Data quirks",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "basketball.tactics.spacing",
+      "title": "Spacing, coverages, and tactical inference from tracking",
+      "path": "knowledge/basketball/03-tactics-and-coverage.md",
+      "layer": "basketball",
+      "track": "basketball.tactics",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-1405.0231",
+        "arxiv-1612.05502",
+        "goldsberry2019",
+        "taylor2016"
+      ],
+      "code": [
+        "events/detect_screens.py",
+        "analytics/",
+        "visualization/"
+      ],
+      "prereqs": [
+        "perception.tracking.mot",
+        "perception.calibration.homography"
+      ],
+      "tags": [
+        "spacing",
+        "pick-and-roll",
+        "drop",
+        "switch",
+        "zone",
+        "matchup"
+      ],
+      "words": 907,
+      "headings": [
+        "What tracking gives you",
+        "Spacing",
+        "Defensive coverages",
+        "Matchups and defensive skill",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "measurement.evaluation.metrics",
+      "title": "Metrics and scorecards for perception, tracking, and events",
+      "path": "knowledge/measurement/03-metrics-and-scorecards.md",
+      "layer": "measurement",
+      "track": "measurement.evaluation",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-2009.07736",
+        "arxiv-1603.00831",
+        "arxiv-2304.05170",
+        "arxiv-2208.08190"
+      ],
+      "code": [
+        "eval/",
+        "eval/metrics/",
+        "docs/"
+      ],
+      "prereqs": [
+        "measurement.experiment.noise"
+      ],
+      "tags": [
+        "metrics",
+        "HOTA",
+        "IDF1",
+        "MOTA",
+        "F1",
+        "scorecard"
+      ],
+      "words": 811,
+      "headings": [
+        "Metric families",
+        "One scorecard, four views",
+        "Primary vs diagnostic",
+        "Regression gates",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "measurement.experiment.noise",
+      "title": "Experiment design, grouped splits, and the noise floor",
+      "path": "knowledge/measurement/02-experiment-design-and-noise.md",
+      "layer": "measurement",
+      "track": "measurement.experiment",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "murphy2022",
+        "arxiv-2009.07736",
+        "arxiv-1603.00831",
+        "arxiv-2304.05170"
+      ],
+      "code": [
+        "eval/",
+        "tests/"
+      ],
+      "prereqs": [
+        "measurement.evaluation.metrics"
+      ],
+      "tags": [
+        "statistics",
+        "bootstrap",
+        "leakage",
+        "power",
+        "labels"
+      ],
+      "words": 815,
+      "headings": [
+        "The unit of independence",
+        "Bootstrap confidence intervals",
+        "The noise floor",
+        "Leakage checklist",
+        "Label noise",
+        "Power",
+        "Reporting template",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "ml.foundations.training",
+      "title": "ML foundations for a small, messy, domain-shifted dataset",
+      "path": "knowledge/ml/01-foundations.md",
+      "layer": "ml",
+      "track": "ml.foundations",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "prince2023",
+        "goodfellow2016",
+        "arxiv-1512.03385",
+        "arxiv-1706.03762",
+        "arxiv-1412.6980",
+        "arxiv-1502.03167"
+      ],
+      "code": [
+        "models/",
+        "src/"
+      ],
+      "prereqs": [],
+      "tags": [
+        "training",
+        "optimization",
+        "regularization",
+        "architectures",
+        "reproducibility"
+      ],
+      "words": 696,
+      "headings": [
+        "The bias–variance view",
+        "Optimization choices that matter",
+        "Architectures, briefly",
+        "Losses",
+        "Transfer and domain shift",
+        "Reproducibility",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.calibration.homography",
+      "title": "Camera calibration and court homography",
+      "path": "knowledge/perception/01-camera-calibration.md",
+      "layer": "perception",
+      "track": "perception.calibration",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "szeliski2022",
+        "hartley2004",
+        "arxiv-2207.11709",
+        "arxiv-2404.08401",
+        "arxiv-2404.09807"
+      ],
+      "code": [
+        "homography/",
+        "scripts/calibrate_from_points.py"
+      ],
+      "prereqs": [],
+      "tags": [
+        "homography",
+        "DLT",
+        "RANSAC",
+        "broadcast",
+        "camera"
+      ],
+      "words": 1206,
+      "headings": [
+        "The model",
+        "What to measure",
+        "Broadcast is not one camera",
+        "Learned calibration: what the literature actually supports",
+        "Repo mapping",
+        "Failure modes",
+        "Current blocker (2026-10-21)",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.detection.objects",
+      "title": "Object detection for players, ball, rim, and referees",
+      "path": "knowledge/perception/06-object-detection.md",
+      "layer": "perception",
+      "track": "perception.detection",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-1506.02640",
+        "arxiv-1612.03144",
+        "arxiv-1708.02002",
+        "arxiv-2005.12872",
+        "arxiv-2304.08069"
+      ],
+      "code": [
+        "models/",
+        "src/",
+        "data/"
+      ],
+      "prereqs": [],
+      "tags": [
+        "detection",
+        "YOLO",
+        "DETR",
+        "small objects",
+        "mAP"
+      ],
+      "words": 681,
+      "headings": [
+        "What the repo runs",
+        "The architecture families",
+        "Evaluation that matches the pipeline",
+        "Per-class thresholds are not a hack",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.events.detection",
+      "title": "Event detection and temporal localization",
+      "path": "knowledge/perception/04-event-detection.md",
+      "layer": "perception",
+      "track": "perception.events",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-2607.21267",
+        "arxiv-2608.19646",
+        "arxiv-2105.07404",
+        "arxiv-2505.03991",
+        "arxiv-2404.05392",
+        "arxiv-2503.00147"
+      ],
+      "code": [
+        "events/",
+        "eval/metrics/events.py",
+        "eval/score.py"
+      ],
+      "prereqs": [
+        "perception.ball.tracking",
+        "perception.tracking.mot"
+      ],
+      "tags": [
+        "events",
+        "shots",
+        "screens",
+        "rebounds",
+        "temporal",
+        "labels"
+      ],
+      "words": 1048,
+      "headings": [
+        "Two paradigms",
+        "Event definitions that survive contact with video",
+        "Temporal localization is its own problem",
+        "The ontology problem",
+        "Label noise",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.events.screen-pnr-result",
+      "title": "Screen/PnR proposal-stage result",
+      "path": "knowledge/perception/08-screen-pnr-result.md",
+      "layer": "perception",
+      "track": "perception.events",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-2105.07404",
+        "arxiv-2607.21267",
+        "arxiv-2608.19646",
+        "arxiv-2404.05392",
+        "arxiv-2503.00147"
+      ],
+      "code": [
+        "events/",
+        "eval/",
+        "docs/screen-pnr-ontology.md"
+      ],
+      "prereqs": [
+        "perception.events.detection",
+        "perception.tracking.mot"
+      ],
+      "tags": [
+        "screen",
+        "pick-and-roll",
+        "proposal-stage",
+        "scorecard",
+        "negative-result"
+      ],
+      "words": 1034,
+      "headings": [
+        "Setup",
+        "Held-out scorecard",
+        "The operating point is the decision",
+        "Did it beat the rule?",
+        "Why proposal-only",
+        "What would change the decision",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.events.shot-event-baseline",
+      "title": "NBA shot-event baseline and scorebug alignment",
+      "path": "knowledge/perception/10-shot-event-baseline.md",
+      "layer": "perception",
+      "track": "perception.events",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-22",
+      "sources": [
+        "nba-stats-api",
+        "oliver2004",
+        "arxiv-2607.21267"
+      ],
+      "code": [
+        "analytics/shot_events.py",
+        "analytics/scorebug.py",
+        "scripts/nba_shot_event_manifest.py",
+        "scripts/align_shots_by_scorebug.py",
+        "scripts/eval_shot_attempts.py",
+        "scripts/broadcast_demo.py",
+        "scripts/build_demo_page.py",
+        "scripts/label_broadcast_events.py",
+        "scripts/score_broadcast_events.py"
+      ],
+      "prereqs": [
+        "perception.state.possession-ledger"
+      ],
+      "tags": [
+        "shot detection",
+        "events",
+        "scorebug",
+        "OCR",
+        "alignment",
+        "NBA"
+      ],
+      "words": 3415,
+      "headings": [
+        "What was built",
+        "Data and result",
+        "What this means",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.pose.actions",
+      "title": "Pose estimation and action recognition",
+      "path": "knowledge/perception/07-pose-and-action.md",
+      "layer": "perception",
+      "track": "perception.pose",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-1812.08008",
+        "arxiv-2204.12484",
+        "arxiv-2303.07399",
+        "arxiv-2503.20781"
+      ],
+      "code": [
+        "inference/pipeline.py",
+        "scripts/check_pose.py",
+        "events/detect_shots_pose.py"
+      ],
+      "prereqs": [
+        "perception.detection.objects"
+      ],
+      "tags": [
+        "pose",
+        "keypoints",
+        "action recognition",
+        "skills",
+        "occlusion"
+      ],
+      "words": 629,
+      "headings": [
+        "What pose gives you",
+        "The model families",
+        "The resolution problem",
+        "Action recognition vs pose",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.representation.foundation-models",
+      "title": "Representation learning and foundation models for basketball",
+      "path": "knowledge/perception/05-representation-learning.md",
+      "layer": "perception",
+      "track": "perception.representation",
+      "status": "active",
+      "confidence": "medium",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-2103.00020",
+        "arxiv-2304.07193",
+        "arxiv-2111.06377",
+        "arxiv-2304.02643",
+        "arxiv-2010.11929"
+      ],
+      "code": [
+        "inference/",
+        "tracking/",
+        "annotation/"
+      ],
+      "prereqs": [
+        "ml.foundations"
+      ],
+      "tags": [
+        "CLIP",
+        "DINOv2",
+        "MAE",
+        "SAM",
+        "transfer",
+        "ReID"
+      ],
+      "words": 877,
+      "headings": [
+        "The inductive-bias trade",
+        "What each model is actually good for",
+        "Transfer protocol",
+        "Team identification: the concrete case",
+        "Domain shift is the real adversary",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.ball.tracking",
+      "title": "Ball detection and trajectory recovery",
+      "path": "knowledge/perception/02-ball-tracking.md",
+      "layer": "perception",
+      "track": "perception.tracking",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-2110.06864",
+        "arxiv-2003.12039",
+        "arxiv-2406.19655",
+        "fontanella2006"
+      ],
+      "code": [
+        "scripts/detect_ball_positions.py",
+        "tracking/",
+        "inference/pipeline.py"
+      ],
+      "prereqs": [
+        "perception.calibration.homography"
+      ],
+      "tags": [
+        "ball",
+        "detection",
+        "tracking",
+        "occlusion",
+        "physics"
+      ],
+      "words": 960,
+      "headings": [
+        "Why the ball is hard",
+        "Detection, tracking, and the difference",
+        "Motion model",
+        "Smoothing without inventing",
+        "What to measure",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "perception.tracking.mot",
+      "title": "Multi-object tracking and identity in basketball",
+      "path": "knowledge/perception/03-multi-object-tracking.md",
+      "layer": "perception",
+      "track": "perception.tracking",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-1602.00763",
+        "arxiv-2110.06864",
+        "arxiv-2206.14651",
+        "arxiv-2203.14360",
+        "arxiv-2009.07736",
+        "arxiv-2304.05170",
+        "arxiv-2406.19655"
+      ],
+      "code": [
+        "tracking/",
+        "eval/metrics/tracking.py",
+        "scripts/export_mot.py"
+      ],
+      "prereqs": [
+        "perception.detection",
+        "perception.calibration.homography"
+      ],
+      "tags": [
+        "MOT",
+        "ByteTrack",
+        "HOTA",
+        "IDF1",
+        "ReID",
+        "occlusion"
+      ],
+      "words": 843,
+      "headings": [
+        "Formulation",
+        "The basketball-specific problems",
+        "Metrics that separate failure modes",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    },
+    {
+      "id": "systems.footage.regimes",
+      "title": "Footage regimes — broadcast, fixed gym, and handheld",
+      "path": "knowledge/systems/01-footage-regimes.md",
+      "layer": "systems",
+      "track": "systems.runtime",
+      "status": "active",
+      "confidence": "high",
+      "updated": "2026-10-21",
+      "sources": [
+        "arxiv-2208.08190",
+        "arxiv-2304.05170",
+        "arxiv-2503.18282",
+        "szeliski2022"
+      ],
+      "code": [
+        "data/",
+        "registry/",
+        "inference/",
+        "eval/"
+      ],
+      "prereqs": [
+        "perception.calibration.homography"
+      ],
+      "tags": [
+        "broadcast",
+        "gym",
+        "camera",
+        "domain shift",
+        "deployment"
+      ],
+      "words": 755,
+      "headings": [
+        "The three regimes",
+        "Why mixing regimes breaks evaluation",
+        "Calibration strategy per regime",
+        "Data-platform implications",
+        "Deployment implications",
+        "Repo mapping",
+        "Failure modes",
+        "Open questions",
+        "Proposed experiments"
+      ]
+    }
+  ],
+  "stats": {
+    "notes": 22,
+    "words": 23100,
+    "by_track": {
+      "basketball.analytics": 3,
+      "basketball.officiating": 1,
+      "basketball.ontology": 1,
+      "basketball.rules": 1,
+      "basketball.strategy": 2,
+      "basketball.tactics": 1,
+      "measurement.evaluation": 1,
+      "measurement.experiment": 1,
+      "ml.foundations": 1,
+      "perception.calibration": 1,
+      "perception.detection": 1,
+      "perception.events": 3,
+      "perception.pose": 1,
+      "perception.representation": 1,
+      "perception.tracking": 2,
+      "systems.runtime": 1
+    },
+    "by_status": {
+      "active": 22
+    }
+  }
+}
